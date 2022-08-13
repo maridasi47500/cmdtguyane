@@ -1,0 +1,38 @@
+
+
+Merci pour votre commande !
+<%=@event.name%>
+<%=l(@event.startDate.to_date, format: :dateevent)%> - <%=l(@event.time, format: :shortclock)%><%if @event.length%> à <%=l(@event.endtime, format: :shortclock)%><%end%>
+JE TÉLÉCHARGE MES BILLETS
+Ma commande n°<%=@event.commande(@ticket.id)%>
+
+Participants	Taux de taxe	Prix TTC
+<%@ticket.quantite.times do%>
+<%=@buyer.fullname%>		
+invitation		<%=number_to_currency(@event.price, unit: @event.priceCurrency, separator: ".")%>
+<%end%>
+
+<%=number_to_currency(0, unit: @event.priceCurrency, separator: ".")%>
+TOTAL TTC
+Informations pratiques
+Lieu de l'événement
+<%=@event.lieuevent%>
+
+Merci de présenter ce billet à l'entrée de l'événement. Une pièce d'identité pourra également vous être demandée.
+
+Pour toute question sur l'événement, veuillez écrire à : communication@cmdt-guyane.fr
+AJOUTER À MON AGENDA
+Google Calendar Apple Calendar Microsoft Outlook Autres
+Informations légales
+Organisateur
+CMDTG
+Route de Montabo Bt ENCRE BP 60 900
+97341
+CAYENNE Cedex
+France
+
+Acheteur
+<%=@buyer.fullname%>
+<%=@buyer.email%>
+Cette solution de billetterie et d’inscription en ligne est fournie par Weezevent.
+Vous organisez des événements ? Sur weezevent.com, c’est simple, rapide et pro.

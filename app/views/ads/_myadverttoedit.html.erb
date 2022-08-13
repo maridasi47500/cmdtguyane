@@ -1,0 +1,62 @@
+<div class="advert-manage-item advert-item advert-item-col-1">
+
+                <div class="advert-img">
+                    </div>
+     
+        <div class="advert-post-title">
+            <span class="adverts-manage-link">
+                
+                <a href="<%=voirannonce_path(title: ad.title.try(:parameterize).to_s)%>" title="<%=ad.title%>" class="advert-link-wraps"><strong><%=ad.title%></strong>
+                
+                
+                </a>
+
+                <%if ad.notverified?%>
+                   <span class="adverts-inline-icon adverts-inline-icon-warn adverts-icon-lock" title="Inactive – Cette annonce est en vérification">&#128274;</span>             
+                                <%end%>
+                <span class="adverts-manage-info">
+                   
+ <span class="adverts-manage-price"><%=ad.prix%></span>                                                           
+                                                            <span class="adverts-manage-date adverts-icon-history"><abbr title="Expire <%=l(ad.expires.to_date, format: :long)%>"><%=l(ad.expires.to_date, format: :default)%></abbr></span>
+                                        
+
+                </span>
+                
+            </span>
+            
+        
+        
+        </div>
+        
+        <div class="advert-published adverts-manage-actions-wrap">
+
+            <span class="adverts-manage-actions-left">
+                <a href="<%=root_path(post_type: 'advert', p: ad.id)%>" title="Voir" class="adverts-manage-action"><span class="adverts-icon-eye"></span>Voir</a>
+                <a href="/mon-compte/?advert_id=<%=ad.id%>" title="Editer" class="adverts-manage-action">
+                    <span class="adverts-icon-pencil-squared"></span>
+                    Editer</a>
+                <a href="/wp-admin/admin-ajax.php?actions=adverts_delete&id=<%=ad.id%>&redirect_to=%2Fmon-compte%2F&_ajax_nonce=718d311cae" title="Supprimer" class="adverts-manage-action adverts-manage-action-delete" data-id="<%=ad.id%>" data-nonce="718d311cae">
+                    <span class="adverts-icon-trash-1"></span>Supprimer                </a>
+                
+                <div class="adverts-manage-action adverts-manage-delete-confirm">
+                    <span class="adverts-icon-trash-1"></span>
+                    Êtes-vous sûr ?                    
+                    <span class="animatemyspin adverts-manage-action-spinner" style="display:none">
+                      &#x21BA;
+                    </span>
+                    <a href="#" class="adverts-manage-action-delete-yes">Oui</a>
+                    <a href="#" class="adverts-manage-action-delete-no">Annuler</a>
+                </div>
+                
+                            </span>
+            <span class="adverts-manage-actions-right">
+                                
+                <a href="#" class="adverts-manage-action adverts-manage-action-more"><span class="adverts-icon-menu"></span>Plus</a>
+            </span>
+            
+            <div class="adverts-manage-actions-more">
+                            </div>
+        </div>
+        
+                
+    </div>

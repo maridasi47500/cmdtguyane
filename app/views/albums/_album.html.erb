@@ -1,0 +1,33 @@
+
+		<div class="card" style="width: 13rem;">
+                      <div class="card-header">
+                          ALBUM - <b><%=album.title.truncate(10)%></b> by <b><%=album.user.username.truncate(10)%></b>
+  </div>
+                                 <div class="card-header">
+        <div class="avatar" style='background: center / contain no-repeat url("<%=album.user.image%>")'></div><%=album.user.username.truncate(7)%>
+  </div>
+                    <div id="carouselcontrols<%=album.id%>" class="carousel slide carousel-fade" data-bs-wrap="false" data-bs-interval="false" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <%album.photos.each_with_index do |photo,i|%>
+    <div class="carousel-item<%if i == 0 %> active<%end%>">
+      <img src="<%=photo.image%>" class="imagealbum d-block w-100" height="287px" alt="<%=photo.title%>">
+    </div>
+      <%end%>
+  </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselcontrols<%=album.id%>" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcontrols<%=album.id%>" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <div class="card-body">
+    <h6 class="card-title" >
+        AFFICHE---<%=album.title%>
+    </h6>
+  </div>
+</div>
+                
+                

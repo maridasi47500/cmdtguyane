@@ -1,0 +1,9 @@
+<%=artcat.cat_parent ? (render 'artcats/artcat', artcat: artcat.cat_parent, first: 'cat_parent') : nil%>
+<%if artcat && artcat.title%>
+<span class="breadcrumbs_delimiter"></span>
+<%end%>
+<%=link_to_unless_current(artcat.title, artcat.url, class: (defined?(first) ? 'breadcrumbs_item '+first : 'breadcrumbs_item')) do
+  (artcat && artcat.title ? ('<span class="breadcrumbs_item '+((defined?(first) ? 'breadcrumbs_item '+first : 'breadcrumbs_item'))+'">'+artcat.title+'</span>').html_safe  : '')
+  
+end%>
+

@@ -1,0 +1,28 @@
+                      <%=link_to_unless_current("<<", "/category/actualites/", class: "pager_first") {''}%>
+
+       <%=link_to_unless(((params[:id].to_i - 1) == 2 || (params[:id].to_i - 1) <= 0), "<", ((params[:id].to_i != 2) ? somearticles_path(params[:id].to_i - 1) : "/category/actualites/"), class: "pager_prev") {''}%>
+
+
+                            <%@mypages.each do |page|%>
+                          <%=
+                            (link_to_unless_current((page.to_i), (page == 1 ? "/category/actualites/" : somearticles_path(page))) do
+                              ('<span class="pager_current '+(page.to_i == params[:id].to_i ? 'active' : '')+' ">'+page.to_s+'</span>').html_safe
+                            end)
+                          %>
+                      <%end%>
+
+
+                            <%@dotpages.each do |page|%>
+                          <%=
+                            link_to_unless_current("...", somearticles_path(page), class: "pager_dot")
+                          %>
+                      <%end%>
+
+                      <%=link_to_unless_current(@lastpage, somearticles_path(@nbpages), class: "pager_group") do
+                              ('<span class="pager_current active ">'+@lastpage.to_s+'</span>').html_safe
+                      end%>
+
+                      <%=link_to_unless(((params[:id].to_i) == @nbpages.to_i), ">", somearticles_path((params[:id].to_i + 1)), class: "pager_next") {''}%>
+
+                      <%=link_to_unless_current(">>", somearticles_path(@nbpages), class: "pager_last") {''}%>
+

@@ -1,0 +1,38 @@
+<%if jour.fromthismonth%>
+<dt class="mec-calendar-day <%=jour.daytoday ? "mec-selected-day" : ""%>  <%=Event.many?(jour.ajd) ? "mec-has-event" : ""%>" data-mec-cell="<%=jour.dayid%>" data-day="<%=jour.daynumber%>" data-month="<%=jour.monthid%>">
+    
+    <%=  link_to_if(Event.many?(jour.ajd), jour.daynumber, '#', class: "mec-has-event-a") do
+        (jour.daynumber.to_s)
+    end%></dt> 
+<%Event.many(jour.ajd).each do |e|%>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "startDate": "<%=l(e.startDate, format: :jsonfile)%>",
+    "endDate": "<%=l(e.endDate, format: :jsonfile)%>",
+    "location":
+    {
+        "@type": "Place",
+                        "name": "<%=e.place.try(:name)%>",
+        "image": "<%=e.place.try(:image)%>",
+        "address": "<%=e.place.try(:address)%>"
+                    },
+    "offers":
+    {
+        "url": "<%=e.url%>",
+        "price": "<%=e.price%>",
+        "priceCurrency": "<%=e.priceCurrency%>"
+    },
+    "performer": "<%=e.performer%>",
+    "description": "<%=e.description%>",
+    "image": "<%=e.image%>",
+    "name": "<%=e.name%>",
+    "url": "<%=e.url%>"
+}
+</script>
+
+<%end%><%else%>
+<dt class="mec-table-nullday"><%=jour.daynumber%></dt>
+<%end%>

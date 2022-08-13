@@ -1,0 +1,27 @@
+
+<div class="isotope_item isotope_item_classic isotope_item_classic_2 isotope_column_2      isotope_item_show" style="float:left;">
+			<article class="ad_item ad_item_classic ad_item_classic_2				  ad_format_standard odd">
+				
+							
+								<div class="ad_content isotope_item_content">
+					<div class="ad_info">
+			<span class="ad_info_item ad_info_posted"> 
+                            <a href="<%=voirannonce_path(title: ad.title.parameterize)%>" class="ad_info_date"><%=l(ad.created_at.to_date, format: :long)%></a></span>
+		</div>							
+                     					<div class="ad_auteur">
+			<span class="ad_info_item ad_autor_posted"> 
+                            par <i><%=ad.contact_person%></i>
+                        </span>
+		</div>							
+                                               
+                                                                    
+                                                                    <h3 class="ad_title"><a href="<%=voirannonce_path(title: ad.title.try(:parameterize))%>"><%=ad.title%></a></h3>
+							
+					<div class="ad_descr">
+						<p><%=ad.description%></p>					
+                                        
+                                        </div>
+
+				</div>				<!-- /.ad_content -->
+			</article>	<!-- /.ad_item -->
+		</div>

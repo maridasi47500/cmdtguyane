@@ -1,0 +1,20 @@
+                        <div class="isotope_item isotope_item_classic isotope_item_classic_2 isotope_column_2      isotope_item_show" style="position: relative; <%=cycle("right", "left")%>: 0px;float:left; opacity: 1;">
+                        <article class="post_item post_item_classic post_item_classic_2                           post_format_standard odd">
+                                <%if article.image%>
+                                                                        <div class="post_featured">
+                                                                          <div class="post_thumb" data-image="<%=article.image%>" data-title="<%=article.title%>">
+                                                                            <a class="hover_icon hover_icon_link" href="<%=article.url%>"><img class="wp-post-image my-wp-post-image" alt="<%=article.title%>" src="<%=article.image%>"></a>  </div>
+                                                </div>
+                            <%end%>
+                                                                <div class="post_content isotope_item_content">
+                                        <div class="post_info">
+                                          <span class="post_info_item post_info_posted"> <a href="<%=article.url%>" class="post_info_date"><%=article.date ? l(article.date, format: :long) : nil%></a></span>
+                                        </div>                                                  <h3 class="post_title"><a href="<%=article.url%>"><%=article.title%></a></h3>
+                                                        
+                                        <div class="post_descr">
+                                          <p><%=strip_tags(article.content).try(:truncate, 140)%></p>                                 </div>
+
+                                </div>                          <!-- /.post_content -->
+                        </article>      <!-- /.post_item -->
+                </div>                                          <!-- /.isotope_item -->
+

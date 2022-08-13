@@ -1,0 +1,48 @@
+	<script type="text/javascript">
+		document.body.className = document.body.className.replace('no-js','js');
+	</script>
+		<div id="login">
+		<h1><a href="#">Propulsé par WordPress</a></h1>
+	<p class="message reset-pass">Veuillez saisir votre nouveau mot de passe ci-dessous.</p>
+		<form name="resetpassform" id="resetpassform" action="/wp-login.php?actions=resetpass" method="post" autocomplete="off">
+			<input type="hidden" id="user_login" value="<%=params[:login]%>" autocomplete="off" />
+
+			<div class="user-pass1-wrap">
+				<p>
+					<label for="pass1">Nouveau mot de passe</label>
+				</p>
+
+				<div class="wp-pwd">
+					<input type="password" data-reveal="1" data-pw="2bxBTSN5DdGb0I)i" name="pass1" id="pass1" class="input password-input" size="24" value="" autocomplete="off" aria-describedby="pass-strength-result" />
+
+					<button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Cacher le mot de passe">
+						<span class="dashicons dashicons-hidden" aria-hidden="true"></span>
+					</button>
+					<div id="pass-strength-result" class="hide-if-no-js" aria-live="polite">Indicateur de robustesse</div>
+				</div>
+				<div class="pw-weak">
+					<input type="checkbox" name="pw_weak" id="pw-weak" class="pw-checkbox" />
+					<label for="pw-weak">Confirmer l’utilisation du mot de passe faible</label>
+				</div>
+			</div>
+
+			<p class="user-pass2-wrap">
+				<label for="pass2">Confirmer le nouveau mot de passe</label>
+				<input type="password" name="pass2" id="pass2" class="input" size="20" value="" autocomplete="off" />
+			</p>
+
+			<p class="description indicator-hint">Conseil : le mot de passe devrait contenir au moins 12 caractères. Pour le rendre plus sûr, utilisez des lettres en majuscule et minuscule, des nombres, et des symboles tels que ! " ? $ % ^ &amp; ).</p>
+			<br class="clear" />
+
+						<input type="hidden" name="rp_key" value="<%=params[:reset_password_token]%>" />
+			<p class="submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Réinitialiser le mot de passe" />
+			</p>
+		</form>
+
+		<p id="nav">
+			<a href="/wp-login.php">Connexion</a>
+					</p>
+				<p id="backtoblog"><a href="/">
+		&larr; Retour vers Conservatoire de Musique, Danse et Théâtre de Guyane		</a></p>
+			</div>

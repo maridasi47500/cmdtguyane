@@ -1,0 +1,37 @@
+
+            
+                    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "startDate": "<%=l(event.startDate, format: :jsonfile)%>",
+    "endDate": "<%=l(event.endDate, format: :jsonfile)%>",
+    "location":
+    {
+        "@type": "Place",
+                        "name": "<%=event.place.try(:name)%>",
+        "image": "<%=event.try(:image)%>",
+        "address": "<%=event.try(:address)%>"
+                    },
+    "offers":
+    {
+        "url": "<%=event.url%>",
+        "price": "<%=event.price%>",
+        "priceCurrency": "<%=event.priceCurrency%>"
+    },
+    "performer": "<%=event.performer%>",
+    "description": "<%=event.description%>",
+    "image": "<%=event.image%>",
+    "name": "<%=event.name%>",
+    "url": "<%=event.url%>"
+}
+
+        </script>
+                    <article data-style="" class="mec-event-article mec-clear  mec-divider-toggle mec-toggle-<%=event.dateid%>-idk" itemscope="">
+                                    <div class="mec-event-image"><a data-event-id="<%=event.id%>" href="/evenements/<%=event.name.parameterize%>/"><img width="150" height="150" src="<%=event.image%>" class="attachment-medium size-medium wp-post-image" alt="" data-mec-postid="<%=event.id%>" srcset="" sizes="(max-width: 212px) 100vw, 212px"></a></div>
+                                            <div class="mec-event-date mec-color"><i class="mec-sl-calendar"></i> <%=l(event.startDate, format: :datecalendar)%></div>
+                                                            <h4 class="mec-event-title"><a class="mec-color-hover" data-event-id="<%=event.id%>" href="/evenements/<%=event.name.parameterize%>/"><%=event.name%></a><span class="event-color" style="background: #fdd700"></span></h4>
+                    <div class="mec-event-detail"><i class="mec-sl-map-marker"></i> <%=event.place.try(:name)%></div>                            
+                    </article>
+            			

@@ -1,0 +1,15 @@
+                        <nav id="pagination" class=" pagination_pages">
+                      <%=link_to_unless_current("<<", somearticlesfirstpage_path(), {class: "pager_first"}) {''}%>
+
+                      <%=params[:id] ? (link_to_unless((params[:id] == "2"), "<", somearticles_path(id: (params[:id].to_i - 1) ), {class: "pager_prev"}) do
+                        link_to("<", somearticlesfirstpage_path( ), class: "pager_prev")
+                      end) : nil%>
+
+
+<%=render partial: "manavigationsupertopactualites", collection: @mypages, as: :pages, locals: {pageid: (params[:id].to_i )}%>
+                      <%=link_to_unless(((params[:id].to_i )>=@mypages[-1..-1].map{|a,b| a*10+b}.first ), ">", somearticles_path(id: (params[:id].to_i + 1), s: params[:s] ), {class: "pager_next"}) {''}%>
+
+                      <%=link_to_unless_current(">>", somearticles_path(id: @mypages[-1..-1].map{|a,b| a*10+b}.first), {class: "pager_last"}) {''}%>
+
+                        </nav>
+

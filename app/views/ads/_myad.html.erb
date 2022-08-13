@@ -1,0 +1,21 @@
+<div class="advert-item advert-item-col-2 advert-id-403671">
+
+                <div class="advert-img">
+                    </div>
+     
+        <div class="advert-post-title">
+            <span title="<%=ad.title%>" class="advert-link">
+                <span class="advert-link-text"><%=ad.title%></span>
+                            </span>
+            <a href="<%=voirannonce_path(title: ad.title.try(:parameterize).to_s)%>" title="<%=ad.title%>" 
+               class="advert-link-wrap"></a>
+        </div>
+
+        <div class="advert-published ">
+
+            <span class="advert-date"><%=l(ad.created_at.to_date, format: :long)%></span>
+
+                        
+                                </div>
+
+    </div>

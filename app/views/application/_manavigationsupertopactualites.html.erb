@@ -1,0 +1,31 @@
+<%@valpage=3%>
+<%if pageid.to_i.between?((pages[0]*10), (pages[0]*10+pages[1]))%>
+<%if pageid.to_s[-1].to_i > 2%>
+<%=link_to_unless(((pageid.to_i - (pages[0]*10)) <= 1 || pageid == 3 ) , "...", somearticles_path(id: ((pageid - 1) - @valpage)), {class: "pager_dot"}) do
+        ()
+end%>
+<%end%>
+
+<%=pageid.between?(2,3) ? link_to("1", somearticlesfirstpage_path(), {class: "pager_group"}) : nil%>
+<%=pageid == 0 ? ('<span class="pager_current active' +' ">'+(1 ).to_s+'</span>').html_safe : nil%>
+
+<%((pageid.to_i - @valpage + 1)..(pageid.to_i + @valpage - 1)).select{|h|h != 0 && h != 1 && h.between?((pages[0]*10 ), (pages[0]*10+pages[1] ))}.each do |page|%>
+<%=link_to_unless((pageid  == page.to_i) , (page ), somearticles_path(id: (page )), {class: "pager_group"}) do
+        ('<span class="pager_current '+((page == 0 || pageid  == page.to_i) ? 'active' : '')+' ">'+(page ).to_s+'</span>').html_safe
+end%>
+
+<%end%>
+
+<%if pageid.to_i < ((pages[0]*10+pages[1]) - @valpage)%>
+<%=link_to "...", somearticles_path(id: (pageid.to_i + @valpage + 1)), class: "pager_dot"%>
+<%end%>
+
+
+
+<%else%>
+<%=link_to_unless_current("#{(pages[0]*10)} - #{(pages[0]*10+pages[1])}", somearticles_path(id: (pages[0]*10)), {class: "pager_group"}) do
+        ('<span class="pager_current '+(page.to_i == pageid.to_i ? 'active' : '')+' ">'+@lastpage.to_s+'</span>').html_safe
+end%>
+
+
+<%end%>

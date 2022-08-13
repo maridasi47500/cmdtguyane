@@ -1,0 +1,665 @@
+	<%=content_for :moncss do%>
+	<link rel="stylesheet" id="mec-select2-style-css" href="/deposerannoncefiles/select2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mec-font-icons-css" href="/deposerannoncefiles/iconfonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="mec-frontend-style-css" href="/deposerannoncefiles/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mec-tooltip-style-css" href="/deposerannoncefiles/tooltip.css" type="text/css" media="all">
+<link rel="stylesheet" id="mec-tooltip-shadow-style-css" href="/deposerannoncefiles/tooltipster-sideTip-shadow.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mec-featherlight-style-css" href="/deposerannoncefiles/featherlight.css" type="text/css" media="all">
+<link rel="stylesheet" id="mec-dynamic-styles-css" href="/deposerannoncefiles/dyncss.css" type="text/css" media="all">
+<style id="mec-dynamic-styles-inline-css" type="text/css">
+.mec-timeline-month-divider,  .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic .mec-selected-day,.mec-wrap.colorskin-custom .mec-color, .mec-wrap.colorskin-custom .mec-event-sharing-wrap .mec-event-sharing > li:hover a, .mec-wrap.colorskin-custom .mec-color-hover:hover, .mec-wrap.colorskin-custom .mec-color-before *:before ,.mec-wrap.colorskin-custom .mec-widget .mec-event-grid-classic.owl-carousel .owl-nav i,.mec-wrap.colorskin-custom .mec-event-list-classic a.magicmore:hover,.mec-wrap.colorskin-custom .mec-event-grid-simple:hover .mec-event-title,.mec-wrap.colorskin-custom .mec-single-event .mec-event-meta dd.mec-events-event-categories:before,.mec-wrap.colorskin-custom .mec-single-event-date:before,.mec-wrap.colorskin-custom .mec-single-event-time:before,.mec-wrap.colorskin-custom .mec-events-meta-group.mec-events-meta-group-venue:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month i,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic dt.mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-infowindow-wp h5 a:hover, .colorskin-custom .mec-events-meta-group-countdown .mec-end-counts h3,.mec-calendar .mec-calendar-side .mec-next-month i,.mec-wrap .mec-totalcal-box i,.mec-calendar .mec-event-article .mec-event-title a:hover,.mec-attendees-list-details .mec-attendee-profile-link a:hover,.mec-wrap.colorskin-custom .mec-next-event-details li i, .mec-next-event-details i:before, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-next-event-details a,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected,.lity .mec-color,.lity .mec-color-before :before,.lity .mec-color-hover:hover,.lity .mec-wrap .mec-color,.lity .mec-wrap .mec-color-before :before,.lity .mec-wrap .mec-color-hover:hover,.leaflet-popup-content .mec-color,.leaflet-popup-content .mec-color-before :before,.leaflet-popup-content .mec-color-hover:hover,.leaflet-popup-content .mec-wrap .mec-color,.leaflet-popup-content .mec-wrap .mec-color-before :before,.leaflet-popup-content .mec-wrap .mec-color-hover:hover, .mec-calendar.mec-calendar-daily .mec-calendar-d-table .mec-daily-view-day.mec-daily-view-day-active.mec-color, .mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail i,.mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail:hover,.mec-map-boxshow .mec-color,.mec-map-boxshow .mec-color-before :before,.mec-map-boxshow .mec-color-hover:hover,.mec-map-boxshow .mec-wrap .mec-color,.mec-map-boxshow .mec-wrap .mec-color-before :before,.mec-map-boxshow .mec-wrap .mec-color-hover:hover{color: #2aaae1}.mec-wrap .mec-map-lightbox-wp.mec-event-list-classic .mec-event-date,.mec-wrap.colorskin-custom .mec-event-sharing .mec-event-share:hover .event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-grid-clean .mec-event-date,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing li:hover a i,.mec-wrap.colorskin-custom .mec-calendar:not(.mec-event-calendar-classic) .mec-selected-day,.mec-wrap.colorskin-custom .mec-calendar .mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-row  dt.mec-has-event:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-has-event:after, .mec-wrap.colorskin-custom .mec-bg-color, .mec-wrap.colorskin-custom .mec-bg-color-hover:hover, .colorskin-custom .mec-event-sharing-wrap:hover > li, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .flip-clock-wrapper ul li a div div.inn,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel,.mec-event-countdown-style3 .mec-event-date,#wrap .mec-wrap article.mec-event-countdown-style1,.mec-event-countdown-style1 .mec-event-countdown-part3 a.mec-event-button,.mec-wrap .mec-event-countdown-style2,.mec-map-get-direction-btn-cnt input[type="submit"],.mec-booking button,span.mec-marker-wrap,.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:before{background-color: #2aaae1;}.mec-timeline-month-divider, .mec-wrap.colorskin-custom .mec-single-event .mec-speakers-details ul li .mec-speaker-avatar a:hover img,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-standard .mec-month-divider span:before,.mec-wrap.colorskin-custom .mec-single-event .mec-social-single:before,.mec-wrap.colorskin-custom .mec-single-event .mec-frontbox-title:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-events-side .mec-table-side-day, .mec-wrap.colorskin-custom .mec-border-color, .mec-wrap.colorskin-custom .mec-border-color-hover:hover, .colorskin-custom .mec-single-event .mec-frontbox-title:before, .colorskin-custom .mec-single-event .mec-events-meta-group-booking form > h4:before, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel:after,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-wrap.colorskin-custom .mec-events-masonry-cats a:hover{border-color: #2aaae1;}.mec-wrap.colorskin-custom .mec-event-countdown-style3 .mec-event-date:after,.mec-wrap.colorskin-custom .mec-month-divider span:before{border-bottom-color:#2aaae1;}.mec-wrap.colorskin-custom  article.mec-event-countdown-style1 .mec-event-countdown-part2:after{border-color: transparent transparent transparent #2aaae1;}.mec-wrap.colorskin-custom .mec-box-shadow-color { box-shadow: 0 4px 22px -7px #2aaae1;}.mec-events-timeline-wrap:before, .mec-wrap.colorskin-custom .mec-timeline-event-local-time, .mec-wrap.colorskin-custom .mec-timeline-event-time ,.mec-wrap.colorskin-custom .mec-timeline-event-location { background: rgba(42,170,225,.11);}.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:after { background: rgba(42,170,225,.3);}
+</style>
+
+<link rel="stylesheet" id="mec-lity-style-css" href="/deposerannoncefiles/lity.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="user-registration-general-css" href="/deposerannoncefiles/user-registration.css" type="text/css" media="all">
+<link rel="stylesheet" id="user-registration-smallscreen-css" href="/deposerannoncefiles/user-registration-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="user-registration-my-account-layout-css" href="/deposerannoncefiles/my-account-layout.css" type="text/css" media="all">
+<link rel="stylesheet" id="sweetalert2-css" href="/deposerannoncefiles/sweetalert2.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="/deposerannoncefiles/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="/deposerannoncefiles/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="/deposerannoncefiles/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="essential-grid-plugin-settings-css" href="/deposerannoncefiles/settings.css" type="text/css" media="all">
+<link rel="stylesheet" id="tp-fontello-css" href="/deposerannoncefiles/fontello.css" type="text/css" media="all">
+<link rel="stylesheet" id="gdpr-framework-cookieconsent-css-css" href="/deposerannoncefiles/cookieconsent.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="/deposerannoncefiles/rs6.css" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="wpb_wmca_accordion_style-css" href="/deposerannoncefiles/wpb_wmca_style.css" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="/deposerannoncefiles/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontello-style-css" href="/deposerannoncefiles/fontello(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="melodyschool-main-style-css" href="/deposerannoncefiles/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="melodyschool-animation-style-css" href="/deposerannoncefiles/core.animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="melodyschool-shortcodes-style-css" href="/deposerannoncefiles/theme.shortcodes.css" type="text/css" media="all">
+<link rel="stylesheet" id="melodyschool-theme-style-css" href="/deposerannoncefiles/theme.css" type="text/css" media="all">
+<style id="melodyschool-theme-style-inline-css" type="text/css">
+  .menu_side_nav>li ul,.menu_main_nav>li ul{width:300px}.menu_side_nav>li>ul ul,.menu_main_nav>li>ul ul{left:304px}.menu_side_nav>li>ul ul.submenu_left,.menu_main_nav>li>ul ul.submenu_left{left:-301px} .contacts_wrap .logo img{height:30px}
+</style>
+<link rel="stylesheet" id="melodyschool-responsive-style-css" href="/deposerannoncefiles/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="/deposerannoncefiles/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="/deposerannoncefiles/wp-mediaelement.min.css" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='vc_lte_ie9-css'  href='/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css?ver=6.0.5' type='text/css' media='screen' />
+<![endif]-->
+<link rel="stylesheet" id="custom-frontend-style-css" href="/deposerannoncefiles/frontendstyle.css" type="text/css" media="all">
+<style id="custom-frontend-style-inline-css" type="text/css">
+#wp-admin-bar-wp-logo,#wp-admin-bar-customize,#wp-admin-bar-updates,#wp-admin-bar-vc_inline-admin-bar-link,#wp-admin-bar-edit-profile,#wp-admin-bar-user-info {display: none !important;}
+</style>
+<script type="text/javascript" src="/deposerannoncefiles/featherlight.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/select2.full.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var mecdata = {"day":"jour","days":"jours","hour":"heure","hours":"heures","minute":"minute","minutes":"minutes","second":"seconde","seconds":"secondes","elementor_edit_mode":"no","recapcha_key":"","ajax_url":"https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php","fes_nonce":"49b9200cc3","current_year":"2021","datepicker_format":"dd.mm.yy&d.m.Y"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/frontend.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/tooltip.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/events.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/lity.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/colorbrightness.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/cookieconsent.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/revolution.tools.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/rs6.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/jquery.cookie.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/jquery.navgoco.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/modernizr.min.js"></script>
+
+    
+    <link rel="stylesheet" id="adverts-frontend-css" href="/deposerannoncefiles/wpadverts-frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="adverts-icons-css" href="/deposerannoncefiles/wpadverts-glyphs.css" type="text/css" media="all">
+<link rel="stylesheet" id="adverts-icons-animate-css" href="/deposerannoncefiles/animation.css" type="text/css" media="all">
+<link rel="stylesheet" id="jcrop-css" href="/deposerannoncefiles/jquery.Jcrop.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="adverts-upload-css" href="/deposerannoncefiles/wpadverts-upload.css" type="text/css" media="all">
+<link rel="stylesheet" id="mec-owl-carousel-style-css" href="/deposerannoncefiles/owl.carousel.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mec-owl-carousel-theme-style-css" href="/deposerannoncefiles/owl.theme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpgmza-ol-base-style-css" href="/deposerannoncefiles/ol.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpgmza-ol-style-css" href="/deposerannoncefiles/open-layers.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="/deposerannoncefiles/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpgmza-common-css" href="/deposerannoncefiles/common.css" type="text/css" media="all">
+<link rel="stylesheet" id="remodal-css" href="/deposerannoncefiles/remodal.css" type="text/css" media="all">
+<link rel="stylesheet" id="remodal-default-theme-css" href="/deposerannoncefiles/remodal-default-theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpgmza-ui-default-css" href="/deposerannoncefiles/default.css" type="text/css" media="all">
+<script type="text/javascript" src="/deposerannoncefiles/core.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/datepicker.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Fermer","currentText":"Aujourd\u2019hui","monthNames":["janvier","f\u00e9vrier","mars","avril","mai","juin","juillet","ao\u00fbt","septembre","octobre","novembre","d\u00e9cembre"],"monthNamesShort":["Jan","F\u00e9v","Mar","Avr","Mai","Juin","Juil","Ao\u00fbt","Sep","Oct","Nov","D\u00e9c"],"nextText":"Suivant","prevText":"Pr\u00e9c\u00e9dent","dayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"dayNamesShort":["dim","lun","mar","mer","jeu","ven","sam"],"dayNamesMin":["D","L","M","M","J","V","S"],"dateFormat":"d MM yy","firstDay":1,"isRTL":false});});
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/cmdt-guyane.fr\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/scripts.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var gdpr_policy_page = {"gdpr_url":"","gdpr_message":"Le CMDT Guyane utilise des cookies pour vous garantir la meilleure exp\u00e9rience possible sur notre site web.","gdpr_dismiss":"Je refuse","gdpr_allow":"J'accepte","gdpr_header":"","gdpr_link":"En savoir plus","gdpr_popup_position":"bottom","gdpr_popup_type":"opt-out","gdpr_popup_static":"","gdpr_popup_background":"#efefef","gdpr_popup_text":"#404040","gdpr_button_background":"transparent","gdpr_button_text":"#2aaae1","gdpr_button_border":"#2aaae1","gdpr_popup_theme":"","gdpr_hide":"","gdpr_popup":"","policy":"Politique de cookie","ajaxurl":"https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php","gdpr_link_target":"_blank"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/cookieconsent.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var TRX_UTILS_STORAGE = {"ajax_url":"https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php","ajax_nonce":"ece7334ba5","site_url":"https:\/\/cmdt-guyane.fr","user_logged_in":"0","email_mask":"^([a-zA-Z0-9_\\-]+\\.)*[a-zA-Z0-9_\\-]+@[a-z0-9_\\-]+(\\.[a-z0-9_\\-]+)*\\.[a-z]{2,6}$","msg_ajax_error":"Invalid server answer!","msg_error_global":"Invalid field's value!","msg_name_empty":"The name can't be empty","msg_email_empty":"Too short (or empty) email address","msg_email_not_valid":"E-mail address is invalid","msg_text_empty":"The message text can't be empty","msg_send_complete":"Send message complete!","msg_send_error":"Transmit failed!","login_via_ajax":"1","msg_login_empty":"The Login field can't be empty","msg_login_long":"The Login field is too long","msg_password_empty":"The password can't be empty and shorter then 4 characters","msg_password_long":"The password is too long","msg_login_success":"Login success! The page will be reloaded in 3 sec.","msg_login_error":"Login failed!","msg_not_agree":"Please, read and check 'Terms and Conditions'","msg_email_long":"E-mail address is too long","msg_password_not_equal":"The passwords in both fields are not equal","msg_registration_success":"Registration success! Please log in!","msg_registration_error":"Registration failed!"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/trx_utils.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/api(1).js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/accordion-init.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/superfish.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/jquery.slidemenu.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/core.reviews.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/core.utils.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var MELODYSCHOOL_STORAGE = {"strings":{"ajax_error":"R\u00e9ponse du serveur non valide","bookmark_add":"Ajouter le signet","bookmark_added":"La page courante a \u00e9t\u00e9 ajout\u00e9e avec succ\u00e8s aux signets. Vous pouvez la voir dans le panneau de droite sur l\u2019onglet \u00abFavoris\u00bb","bookmark_del":"Supprimer des favoris","bookmark_title":"Saisir le titre du signet","bookmark_exists":"Cette page existe d\u00e9j\u00e0 dans la liste des favoris","search_error":"Une erreur s\u2019est produite dans la recherche AJAX ! Merci d\u2019entrez votre requ\u00eate et d\u2019appuyez sur l\u2019ic\u00f4ne de recherche pour la recherche classique.","email_confirm":"Nous vous avons envoy\u00e9 un e-mail de confirmation \u00e0 l&#039;adresse &quot;%s&quot;. Merci de v\u00e9rifier votre messagerie et cliquez sur le lien.","reviews_vote":"Merci pour votre vote ! La nouvelle note moyenne est :","reviews_error":"Erreur d&#039;enregistrement du vote  ! S&#039;il vous pla\u00eet, r\u00e9essayez plus tard.","error_like":"Erreur d&#039;enregistrement de votre &quot;J&#039;aime&quot; ! S&#039;il vous pla\u00eet, r\u00e9essayez plus tard.","error_global":"Texte d\u2019erreur global","name_empty":"Le nom ne peut pas \u00eatre vide","name_long":"Nom trop long","email_empty":"Adresse e-mail trop courte ou vide","email_long":"Adresse e-mail trop longue","email_not_valid":"Adresse de messagerie non valide","subject_empty":"Le champ sujet ne peut \u00eatre vide","subject_long":"Sujet trop long","text_empty":"Le champ texte du message ne peut pas \u00eatre vide","text_long":"Texte du message trop long","send_complete":"Message envoy\u00e9","send_error":"Erreur de transmission du message!","login_empty":"Le champ d\u2019identification ne peut pas \u00eatre vide","login_long":"Identifiant invalide (trop long)","login_success":"\ufeffConnexion r\u00e9ussie! La page sera pr\u00eate dans 3 secondes.","login_failed":"La connexion a \u00e9chou\u00e9 !","password_empty":"Le mot de passe ne peut pas \u00eatre vide et doit contenir au moins 4 caract\u00e8res","password_long":"Mot de passe trop long","password_not_equal":"Les deux mots de passe ne correspondent pas","registration_success":"Inscription r\u00e9ussie ! Vous pouvez vous connecter.","registration_failed":"L\u2019inscription a \u00e9chou\u00e9 !","geocode_error":"Le G\u00e9ocode n\u2019a pas fonctionn\u00e9 pour la raison suivante :","googlemap_not_avail":"API Google Maps indisponible!","editor_save_success":"Contenu de l&#039;article sauvegard\u00e9 !","editor_save_error":"Erreur lors de la sauvegarde des donn\u00e9es !","editor_delete_post":"Vous voulez vraiment supprimer la publication actuelle?","editor_delete_post_header":"Supprimer l&#039;article","editor_delete_success":"Article supprim\u00e9 !","editor_delete_error":"Erreur lors de la suppression du message","editor_caption_cancel":"Annuler","editor_caption_close":"Fermer"},"use_ajax_views_counter":"","ajax_url":"https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php","ajax_nonce":"ece7334ba5","site_url":"https:\/\/cmdt-guyane.fr","vc_edit_mode":"","theme_font":"Open Sans","theme_skin":"","theme_skin_color":"#333745","theme_skin_bg_color":"#ffffff","slider_height":"100","system_message":{"message":"","status":"","header":""},"user_logged_in":"","toc_menu":"float","toc_menu_home":"1","toc_menu_top":"1","menu_fixed":"1","menu_mobile":"1024","menu_slider":"1","menu_cache":"","demo_time":"0","media_elements_enabled":"1","ajax_search_enabled":"1","ajax_search_min_length":"3","ajax_search_delay":"200","css_animation":"1","menu_animation_in":"none","menu_animation_out":"none","popup_engine":"pretty","email_mask":"^([a-zA-Z0-9_\\-]+\\.)*[a-zA-Z0-9_\\-]+@[a-z0-9_\\-]+(\\.[a-z0-9_\\-]+)*\\.[a-z]{2,6}$","contacts_maxlength":"1000","comments_maxlength":"1000","remember_visitors_settings":"","admin_mode":"","isotope_resize_delta":"0.3","error_message_box":null,"viewmore_busy":"","video_resize_inited":"","top_panel_height":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/core.init.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/theme.init.js"></script>
+<script type="text/javascript">
+var mejsL10n = {"language":"fr","strings":{"mejs.download-file":"T\u00e9l\u00e9charger le fichier","mejs.install-flash":"Vous utilisez un navigateur qui n\u2019a pas le lecteur Flash activ\u00e9 ou install\u00e9. Veuillez activer votre extension Flash ou t\u00e9l\u00e9charger la derni\u00e8re version \u00e0 partir de cette adresse\u00a0: https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Plein \u00e9cran","mejs.play":"Lecture","mejs.pause":"Pause","mejs.time-slider":"Curseur de temps","mejs.time-help-text":"Utilisez les fl\u00e8ches droite\/gauche pour avancer d\u2019une seconde, haut\/bas pour avancer de dix secondes.","mejs.live-broadcast":"\u00c9mission en direct","mejs.volume-help-text":"Utilisez les fl\u00e8ches haut\/bas pour augmenter ou diminuer le volume.","mejs.unmute":"R\u00e9activer le son","mejs.mute":"Muet","mejs.volume-slider":"Curseur de volume","mejs.video-player":"Lecteur vid\u00e9o","mejs.audio-player":"Lecteur audio","mejs.captions-subtitles":"L\u00e9gendes\/Sous-titres","mejs.captions-chapters":"Chapitres","mejs.none":"Aucun","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanais","mejs.arabic":"Arabe","mejs.belarusian":"Bi\u00e9lorusse","mejs.bulgarian":"Bulgare","mejs.catalan":"Catalan","mejs.chinese":"Chinois","mejs.chinese-simplified":"Chinois (simplifi\u00e9)","mejs.chinese-traditional":"Chinois (traditionnel)","mejs.croatian":"Croate","mejs.czech":"Tch\u00e8que","mejs.danish":"Danois","mejs.dutch":"N\u00e9erlandais","mejs.english":"Anglais","mejs.estonian":"Estonien","mejs.filipino":"Filipino","mejs.finnish":"Finnois","mejs.french":"Fran\u00e7ais","mejs.galician":"Galicien","mejs.german":"Allemand","mejs.greek":"Grec","mejs.haitian-creole":"Cr\u00e9ole ha\u00eftien","mejs.hebrew":"H\u00e9breu","mejs.hindi":"Hindi","mejs.hungarian":"Hongrois","mejs.icelandic":"Islandais","mejs.indonesian":"Indon\u00e9sien","mejs.irish":"Irlandais","mejs.italian":"Italien","mejs.japanese":"Japonais","mejs.korean":"Cor\u00e9en","mejs.latvian":"Letton","mejs.lithuanian":"Lituanien","mejs.macedonian":"Mac\u00e9donien","mejs.malay":"Malais","mejs.maltese":"Maltais","mejs.norwegian":"Norv\u00e9gien","mejs.persian":"Perse","mejs.polish":"Polonais","mejs.portuguese":"Portugais","mejs.romanian":"Roumain","mejs.russian":"Russe","mejs.serbian":"Serbe","mejs.slovak":"Slovaque","mejs.slovenian":"Slov\u00e9nien","mejs.spanish":"Espagnol","mejs.swahili":"Swahili","mejs.swedish":"Su\u00e9dois","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turc","mejs.ukrainian":"Ukrainien","mejs.vietnamese":"Vietnamien","mejs.welsh":"Ga\u00e9lique","mejs.yiddish":"Yiddish"}};
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/mediaelement-and-player.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/mediaelement-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wp-mediaelement.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/wp-embed.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/theme.shortcodes.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var adverts_frontend_lang = {"ajaxurl":"https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php","als_visible_items":"5","als_scrolling_items":"1","lightbox":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wpadverts-frontend.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var adverts_currency = {"aSign":"\u20ac","pSign":"s","aSep":",","aDec":".","mDec":"2"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/auto-numeric.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/wpadverts-form.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var adverts_multiselect_lang = {"hint":"Choisir l'option"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wpadverts-multiselect.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/plupload.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/widget.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/mouse.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/sortable.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/effect.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/effect-fade.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/underscore.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wp-util.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/jquery.Jcrop.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var adverts_gallery_lang = {"ajaxurl":"https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php","edit_image":"Editer l'image","delete_image":"Supprimer l'image","view_image":"Voir la grande image","featured":"Principal"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wpadverts-gallery.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpgmza_google_api_status = {"message":"Engine is not google-maps","code":"ENGINE_NOT_GOOGLE_MAPS"};
+var wpgmza_google_api_status = {"message":"Engine is not google-maps","code":"ENGINE_NOT_GOOGLE_MAPS"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wpgmza_data.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/jquery.dataTables.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/jquery-cookie.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/remodal.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/spectrum.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/text.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/pako_deflate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGMZA_localized_data = {"adminurl":"https:\/\/cmdt-guyane.fr\/wp-admin\/","ajaxurl":"https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php","pluginDirURL":"https:\/\/cmdt-guyane.fr\/wp-content\/plugins\/wp-google-maps\/","ajaxnonce":"d7127dc470","legacyajaxnonce":"ec1fa60c93","html":{"googleMapsAPIErrorDialog":"<div>\r\n\r\n\t<h2>Maps API Error<\/h2>\r\n\t\r\n\t<div>\r\n\t\r\n\t\t<p>\r\n\t\t\tOne or more error(s) have occured attempting to initialize the Maps API:\t\t<\/p>\r\n\t\r\n\t\t<ul class=\"wpgmza-google-api-error-list\"><li class=\"template notice notice-error\">\r\n\t\t\t\t<span class=\"wpgmza-message\"><\/span>\r\n\t\t\t\t<span class=\"wpgmza-documentation-buttons\">\r\n\t\t\t\t\t<a target=\"_blank\">\r\n\t\t\t\t\t\t<i class=\"fa\" aria-hidden=\"true\"><\/i>\r\n\t\t\t\t\t<\/a>\r\n\t\t\t\t<\/span>\r\n\t\t\t<\/li>\r\n\t\t<\/ul><\/div>\r\n\t\t\t<p class=\"wpgmza-front-end-only\">\r\n\t\t<i class=\"fa fa-eye\" aria-hidden=\"true\"><\/i>\r\n\t\tThis dialog is only visible to administrators\t<\/p>\r\n\t\r\n\t<!--<button data-remodal-action=\"confirm\" class=\"remodal-confirm\">\r\n\t\tDismiss\t<\/button>-->\r\n\r\n<\/div>"},"imageFolderURL":"https:\/\/cmdt-guyane.fr\/wp-content\/plugins\/wp-google-maps\/images\/","resturl":"https:\/\/cmdt-guyane.fr\/wp-json\/wpgmza\/v1","restnonce":"3b52d6e90b","restnoncetable":{"\/markers(\\\/\\d+)?\/":"26f3679f97","\/datatables":"85503b7939"},"settings":{"wpgmza_google_maps_api_key":false,"engine":"open-layers","google_maps_api_key":false,"default_marker_icon":"https:\/\/cmdt-guyane.fr\/wp-content\/plugins\/wp-google-maps\/images\/spotlight-poi2.png","developer_mode":false,"user_interface_style":"default","wpgmza_gdpr_enabled":1,"wpgmza_gdpr_default_notice":"<p>\r\n\tI agree for my personal data to be processed by <span name=\"wpgmza_gdpr_company_name\"><\/span>, for the purpose(s) of <span name=\"wpgmza_gdpr_retention_purpose\"><\/span>.\r\n<\/p>\r\n\r\n<p>\t\r\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\r\n<\/p>\r\n<p>\r\n\tSome visual components of WP Google Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\r\n<\/p>\r\n<p>\r\n\tWP Google Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Google Maps transmit this information.\r\n<\/p>\r\n<p>\r\n\tPlease <a href=\"https:\/\/developers.google.com\/maps\/terms\">see here<\/a> and <a href=\"https:\/\/maps.google.com\/help\/terms_maps.html\">here<\/a> for Google's terms. Please also see <a href=\"https:\/\/policies.google.com\/privacy?hl=en-GB&amp;gl=uk\">Google's Privacy Policy<\/a>. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\r\n<\/p>\r\n<p>\r\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\r\n<\/p>","wpgmza_gdpr_company_name":"Conservatoire de Musique, Danse et Th\u00e9\u00e2tre de Guyane","wpgmza_gdpr_retention_purpose":"displaying map tiles, geocoding addresses and calculating and display directions.","wpgmza_settings_marker_pull":"0","wpgmza_maps_engine":"open-layers","wpgmza_maps_engine_dialog_done":true,"defaultMarkerIcon":"https:\/\/cmdt-guyane.fr\/wp-content\/plugins\/wp-google-maps\/images\/spotlight-poi2.png","developerMode":false,"gdprCompanyName":"Conservatoire de Musique, Danse et Th\u00e9\u00e2tre de Guyane","gdprDefaultNotice":"<p>\r\n\tI agree for my personal data to be processed by <span name=\"wpgmza_gdpr_company_name\"><\/span>, for the purpose(s) of <span name=\"wpgmza_gdpr_retention_purpose\"><\/span>.\r\n<\/p>\r\n\r\n<p>\t\r\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\r\n<\/p>\r\n<p>\r\n\tSome visual components of WP Google Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\r\n<\/p>\r\n<p>\r\n\tWP Google Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Google Maps transmit this information.\r\n<\/p>\r\n<p>\r\n\tPlease <a href=\"https:\/\/developers.google.com\/maps\/terms\">see here<\/a> and <a href=\"https:\/\/maps.google.com\/help\/terms_maps.html\">here<\/a> for Google's terms. Please also see <a href=\"https:\/\/policies.google.com\/privacy?hl=en-GB&amp;gl=uk\">Google's Privacy Policy<\/a>. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\r\n<\/p>\r\n<p>\r\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\r\n<\/p>","gdprEnabled":1,"gdprRetentionPurpose":"displaying map tiles, geocoding addresses and calculating and display directions.","googleMapsApiKey":false,"mapsEngineDialogDone":true,"markerPull":"database","userInterfaceStyle":"default"},"currentPage":null,"userCanAdministrator":"0","serverCanInflate":"1","localized_strings":{"unsecure_geolocation":"Many browsers are no longer allowing geolocation from unsecured origins. You will need to secure your site with an SSL certificate (HTTPS) or this feature may not work for your visitors","use_my_location":"Utilisez ma localisation","google_api_not_loaded":"The map cannot be initialized because the Maps API has not been loaded. Please check your settings.","no_google_maps_api_key":"You have not entered a <b>Google Maps API Key<\/b>.<br \/><br \/>Please go to the your admin area, then Maps, then Settings, then the Advanced tab to <a href=\"https:\/\/cmdt-guyane.fr\/wp-admin\/admin.php?page=wp-google-maps-menu-settings#tabs-4\">enter your Google Maps API key<\/a>.<br \/><br \/>Alternatively, <a href=\"https:\/\/cmdt-guyane.fr\/wp-admin\/admin.php?page=wp-google-maps-menu-settings\">choose the Open Layers engine<\/a> to avoid getting an API key.","documentation":"Documentation","api_dashboard":"API Dashboard","verify_project":"Verify Project","failed_to_get_address":"Failed to get address","failed_to_create_marker":"Failed to create marker %d - this marker cannot be placed on the map.","my_location":"My Location","kilometers_away":"km de distance","miles_away":"miles de distance","import_completed":"Import completed.","importing_please_wait":"Importing, this may take a moment...","no_address_specified":"No address specified","add_marker":"Ajouter un marqueur","save_marker":"Enregistrer le marqueur","please_wait":"Please Wait...","zero_results":"No results found in this location. Please try again.","address_not_found":"This address could not be found. WP Google Maps uses a 3rd party service (eg Google) to convert addresses to geographic coordinates. Unfortunately, the service has no records for this address at present. Please try an alternative format, or manually position the marker using right click.","geocode_fail":"Geocode failed due to technical reasons","you_must_check_gdpr_consent":"You must check the GDPR consent box to continue","no_gps_coordinates":"No GPS coordinates found","fetching_directions":"Recherche d'itin\u00e9raire ...","unknown_directions_service_status":"Unknown directions service status","please_fill_out_both_from_and_to_fields":"Please fill out both the \"from\" and \"to\" fields","no_picture_found":"No picture found","overwrite_theme_data":"Are you sure you want to overwrite the existing theme data?","upload_complete":"Upload Complete","uploading_file":"Uploading file","bulk_jpeg_media_title":"WP Google Maps - Bulk JPEG Upload","from_your_location":"from your location","from_searched_location":"from searched location","yes":"Oui","no":"Non","requires_gold_v5":"Requires WP Google Maps - Gold add-on 5.0.0 or above","confirm_remove_duplicates":"This operation is not reversable. We recommend you take a backup before proceeding. Would you like to continue?","invalid_theme_data":"Invalid theme data","duplicate_custom_field_name":"Duplicate custom field names, please ensure you only add unique custom field names.","disabled_interactions_notice":"Some interactions are disabled.","interactions_enabled_notice":"Interactions Enabled","disabled_interactions_button":"Re-Enable Interactions","use_two_fingers":"Use two fingers to move the map","use_ctrl_scroll_to_zoom":"Use ctrl + scroll to zoom the map","geocode_was_not_successful":"Geocode was not successful for the following reason: ","geocoding_library_notice":"Geocoding this address failed. Please check you have enabled the Geocoding API for your Google Maps API project.","map_delete_prompt_text":"Are you sure you want to delete this map?","map_bulk_delete_prompt_text":"Are you sure you want to delete these maps?"},"api_consent_html":"<div class=\"wpgmza-gdpr-compliance\"><p>\r\n\tI agree for my personal data to be processed by <span name=\"wpgmza_gdpr_company_name\">Conservatoire de Musique, Danse et Th\u00e9\u00e2tre de Guyane<\/span>, for the purpose(s) of <span name=\"wpgmza_gdpr_retention_purpose\">displaying map tiles, geocoding addresses and calculating and display directions.<\/span>.\r\n<\/p>\r\n\r\n<p>\t\r\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\r\n<\/p>\r\n<p>\r\n\tSome visual components of WP Google Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\r\n<\/p>\r\n<p>\r\n\tWP Google Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Google Maps transmit this information.\r\n<\/p>\r\n<p>\r\n\tPlease <a href=\"https:\/\/developers.google.com\/maps\/terms\">see here<\/a> and <a href=\"https:\/\/maps.google.com\/help\/terms_maps.html\">here<\/a> for Google's terms. Please also see <a href=\"https:\/\/policies.google.com\/privacy?hl=en-GB&gl=uk\">Google's Privacy Policy<\/a>. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\r\n<\/p>\r\n<p>\r\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\r\n<\/p><p class='wpgmza-centered'><button class='wpgmza-api-consent'>I agree<\/button><\/div><\/p>","basic_version":"8.0.23","_isProVersion":"","defaultMarkerIcon":"https:\/\/cmdt-guyane.fr\/wp-content\/plugins\/wp-google-maps\/images\/spotlight-poi2.png","markerXMLPathURL":"\/\/cmdt-guyane.fr\/wp-content\/uploads\/wp-google-maps\/","is_admin":"0","locale":"fr_FR","isServerIIS":"","postID":"1572"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wp-google-maps.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpgmza_circle_data_array = [];
+var wpgmza_rectangle_data_array = [];
+var wpgmaps_mapid = {"wpgmza_legacy_current_map_id":"1"};
+var wpgmaps_localize = {"1":{"id":"1","map_title":"Carte footer","map_width":"100","map_height":"400","map_start_lat":"4.942891","map_start_lng":"-52.302281","map_start_location":"4.942891133703384,-52.30228119000632","map_start_zoom":"16","default_marker":"0","type":"1","alignment":"4","directions_enabled":"1","styling_enabled":"0","styling_json":"","active":"0","kml":"","bicycle":"2","traffic":"2","dbox":"1","dbox_width":"100","listmarkers":"0","listmarkers_advanced":"0","filterbycat":"0","ugm_enabled":"0","ugm_category_enabled":"0","fusion":"","map_width_type":"%","map_height_type":"px","mass_marker_support":"1","ugm_access":"0","order_markers_by":"1","order_markers_choice":"2","show_user_location":"0","default_to":"","other_settings":{"store_locator_enabled":2,"store_locator_distance":2,"store_locator_default_radius":10,"store_locator_not_found_message":"No results found in this location. Please try again.","store_locator_bounce":1,"store_locator_query_string":"Code Postal \/ Adresse","store_locator_default_address":"","wpgmza_store_locator_restrict":"","wpgmza_store_locator_radius_style":"modern","map_max_zoom":"1","transport_layer":2,"wpgmza_show_points_of_interest":0,"wpgmza_auto_night":0}}};
+var wpgmaps_localize_polygon_settings = [];
+var wpgmaps_localize_polyline_settings = [];
+var wpgmaps_markerurl = "\/\/cmdt-guyane.fr\/wp-content\/uploads\/wp-google-maps\/1markers.xml";
+var wpgmaps_localize_marker_data = {"2":{"map_id":"1","marker_id":"2","title":"","address":"4.942891133703384, -52.30228119000632","desc":"","pic":"","icon":"","linkd":"","lat":"4.9428911337034","lng":"-52.302281190006","anim":"0","retina":"0","category":"","infoopen":"0","other_data":""}};
+var wpgmaps_localize_global_settings = {"wpgmza_google_maps_api_key":"","engine":"open-layers","google_maps_api_key":"","default_marker_icon":"https:\/\/cmdt-guyane.fr\/wp-content\/plugins\/wp-google-maps\/images\/spotlight-poi2.png","developer_mode":"","user_interface_style":"default","wpgmza_gdpr_enabled":"1","wpgmza_gdpr_default_notice":"<p>\r\n\tI agree for my personal data to be processed by <span name=\"wpgmza_gdpr_company_name\"><\/span>, for the purpose(s) of <span name=\"wpgmza_gdpr_retention_purpose\"><\/span>.\r\n<\/p>\r\n\r\n<p>\t\r\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\r\n<\/p>\r\n<p>\r\n\tSome visual components of WP Google Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\r\n<\/p>\r\n<p>\r\n\tWP Google Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Google Maps transmit this information.\r\n<\/p>\r\n<p>\r\n\tPlease <a href=\"https:\/\/developers.google.com\/maps\/terms\">see here<\/a> and <a href=\"https:\/\/maps.google.com\/help\/terms_maps.html\">here<\/a> for Google's terms. Please also see <a href=\"https:\/\/policies.google.com\/privacy?hl=en-GB&gl=uk\">Google's Privacy Policy<\/a>. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\r\n<\/p>\r\n<p>\r\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\r\n<\/p>","wpgmza_gdpr_company_name":"Conservatoire de Musique, Danse et Th\u00e9\u00e2tre de Guyane","wpgmza_gdpr_retention_purpose":"displaying map tiles, geocoding addresses and calculating and display directions.","wpgmza_settings_marker_pull":"0","wpgmza_maps_engine":"open-layers","wpgmza_maps_engine_dialog_done":"1"};
+var wpgmaps_lang_km_away = "km de distance";
+var wpgmaps_lang_m_away = "miles de distance";
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wpgmaps.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/ol.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1638569349","secure":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/utils.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/editor.min.js"></script>
+<script type="text/javascript">
+window.wp.oldEditor = window.wp.editor;
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wp-polyfill.min.js"></script>
+<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/dom-ready.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/a11y.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpLinkL10n = {"title":"Ins\u00e9rer\/modifier un lien","update":"Mettre \u00e0 jour","save":"Ajouter un lien","noTitle":"(pas de titre)","noMatchesFound":"Aucun r\u00e9sultat.","linkSelected":"Lien s\u00e9lectionn\u00e9.","linkInserted":"Lien ins\u00e9r\u00e9.","minInputLength":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wplink.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/position.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/menu.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"Aucun r\u00e9sultat.","oneResult":"Un r\u00e9sultat trouv\u00e9. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir. ","manyResults":"%d r\u00e9sultats trouv\u00e9s. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","itemSelected":"\u00c9l\u00e9ment s\u00e9lectionn\u00e9."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/autocomplete.min.js"></script>
+
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "/wp-includes/js/tinymce",
+			suffix: ".min",
+						mceInit: {'post_content':{theme:"modern",skin:"lightgray",language:"fr",formats:{alignleft: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"left"}},{selector: "img,table,dl.wp-caption", classes: "alignleft"}],aligncenter: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"center"}},{selector: "img,table,dl.wp-caption", classes: "aligncenter"}],alignright: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"right"}},{selector: "img,table,dl.wp-caption", classes: "alignright"}],strikethrough: {inline: "del"}},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-4960-20190918",resize:"vertical",menubar:false,branding:false,preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",end_container_on_empty_block:true,wpeditimage_html5_captions:true,wp_lang_attr:"fr-FR",wp_keep_scroll_position:false,wp_shortcut_labels:{"Heading 1":"access1","Heading 2":"access2","Heading 3":"access3","Heading 4":"access4","Heading 5":"access5","Heading 6":"access6","Paragraph":"access7","Blockquote":"accessQ","Underline":"metaU","Strikethrough":"accessD","Bold":"metaB","Italic":"metaI","Code":"accessX","Align center":"accessC","Align right":"accessR","Align left":"accessL","Justify":"accessJ","Cut":"metaX","Copy":"metaC","Paste":"metaV","Select all":"metaA","Undo":"metaZ","Redo":"metaY","Bullet list":"accessU","Numbered list":"accessO","Insert\/edit image":"accessM","Insert\/edit link":"metaK","Remove link":"accessS","Toolbar Toggle":"accessZ","Insert Read More tag":"accessT","Insert Page Break tag":"accessP","Distraction-free writing mode":"accessW","Add Media":"accessM","Keyboard Shortcuts":"accessH"},content_css:"/wp-includes/css/dashicons.min.css?ver=5.4.8,/wp-includes/js/tinymce/skins/wordpress/wp-content.css?ver=5.4.8",plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wpdialogs,wptextpattern,wpview,image",external_plugins:{"mec_mce_buttons":"https:\/\/cmdt-guyane.fr\/wp-content\/plugins\/modern-events-calendar-lite\/assets\/js\/backend.js"},selector:"#post_content",wpautop:true,indent:false,toolbar1:"bold,italic,strikethrough,bullist,numlist,blockquote,justifyleft,justifycenter,justifyright,link,unlink,spellchecker,wp_adv",toolbar2:"strikethrough,hr,forecolor,pastetext,removeformat,charmap,outdent,indent,undo,redo,wp_help",toolbar3:"",toolbar4:"",tabfocus_elements:":prev,:next",body_class:"post_content post-type-post post-status-publish post-format-standard page-template-default locale-fr-fr",theme_advanced_buttons2:"formatselect,justifyfull,forecolor,pastetext,pasteword,removeformat,charmap,outdent,indent,undo,redo",theme_advanced_buttons1:"bold,italic,strikethrough,bullist,numlist,blockquote,justifyleft,justifycenter,justifyright,link,unlink,spellchecker,wp_adv"}},
+			qtInit: {},
+			ref: {plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wpdialogs,wptextpattern,wpview,image",theme:"modern",language:"fr"},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+		<script type="text/javascript" src="/deposerannoncefiles/tinymce.min.js"></script>
+<script type="text/javascript" src="/deposerannoncefiles/plugin.min.js"></script>
+<script type="text/javascript">
+tinymce.addI18n( 'fr', {"New document":"Nouveau document","Headings":"En-t\u00eates","Heading 1":"Titre 1","Heading 2":"Titre 2","Heading 3":"Titre 3","Heading 4":"Titre 4","Heading 5":"Titre 5","Heading 6":"Titre 6","Blocks":"Sections","Paragraph":"Paragraphe","Blockquote":"Bloc de citation","Preformatted":"Pr\u00e9format\u00e9","Address":"Adresse","Underline":"Souligner","Strikethrough":"Barrer","Subscript":"Indice","Superscript":"Exposant","Clear formatting":"Nettoyer la mise en forme","Bold":"Gras","Italic":"Italique","Source code":"Code source","Font Family":"Famille de polices","Font Sizes":"Tailles de la police","Align center":"Centrer","Align right":"Aligner \u00e0 droite","Align left":"Aligner \u00e0 gauche","Justify":"Justifier","Increase indent":"Augmenter l\u2019indentation","Decrease indent":"Diminuer l\u2019indentation","Cut":"Couper","Copy":"Copier","Paste":"Coller","Select all":"Tout s\u00e9lectionner","Undo":"Annuler","Redo":"R\u00e9tablir","Ok":"OK","Cancel":"Annuler","Close":"Fermer","Visual aids":"Aides visuelles","Bullet list":"Liste \u00e0 puces","Numbered list":"Liste num\u00e9rot\u00e9e","Square":"Carr\u00e9","Default":"Par d\u00e9faut","Circle":"Cercle","Disc":"Rond","Lower Greek":"Minuscules grecques","Lower Alpha":"Minuscules alphanum\u00e9riques","Upper Alpha":"Majuscules alphanum\u00e9riques","Upper Roman":"Chiffres romains majuscules","Lower Roman":"Chiffres romains minuscules ","Name":"Nom","Anchor":"Ancre","Anchors":"Ancres","Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores.":"l\u2019ID doit commencer par une lettre, suivie uniquement par des lettres, chiffres, tirets, points, virgules ou tirets-bas.","Id":"ID","Document properties":"Propri\u00e9t\u00e9s du document","Title":"Titre","Keywords":"Mots-cl\u00e9s","Encoding":"Encodage","Author":"Auteur","Insert\/edit image":"Ins\u00e9rer\/modifier une image","General":"G\u00e9n\u00e9ral","Advanced":"Avanc\u00e9","Source":"Adresse web source","Border":"Bordure","Constrain proportions":"Respecter les proportions","Vertical space":"Espace vertical","Image description":"Description de l\u2019image","Insert image":"Ins\u00e9rer une image","Date\/time":"Date\/heure","Insert date\/time":"Ins\u00e9rer l\u2019heure\/la date","Table of Contents":"Table des mati\u00e8res","Insert\/Edit code sample":"Ins\u00e9rer\/modifier le code d\u2019exemple","Language":"Langue","Media":"M\u00e9dias","Insert\/edit media":"Ins\u00e9rer\/modifier un m\u00e9dia","Poster":"Couverture","Alternative source":"Source alternative","Paste your embed code below:":"Collez votre code de contenu embarqu\u00e9 ci-dessous\u00a0:","Insert video":"Ins\u00e9rer une vid\u00e9o","Embed":"Contenu embarqu\u00e9","Special character":"Caract\u00e8re sp\u00e9cial","Right to left":"Droite \u00e0 gauche (RTL)","Left to right":"Gauche \u00e0 droite","Emoticons":"\u00c9motic\u00f4nes","Nonbreaking space":"Espace ins\u00e9cable","Page break":"Saut de page","Paste as text":"Coller en texte","Preview":"Pr\u00e9visualiser","Print":"Imprimer","Save":"Enregistrer","Fullscreen":"Plein \u00e9cran","Horizontal line":"Ligne horizontale","Horizontal space":"Espace horizontal","Restore last draft":"R\u00e9tablir le dernier brouillon","Insert\/edit link":"Ins\u00e9rer\/modifier un lien","Remove link":"Retirer le lien","Link":"Lien","Insert link":"Ins\u00e9rer un lien","Target":"Cible","New window":"Nouvelle fen\u00eatre","Text to display":"Texte \u00e0 afficher","Url":"Adresse web","The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?":"L\u2019URL que vous avez saisie semble \u00eatre une adresse de messagerie. Voulez-vous y ajouter le pr\u00e9fixe \u00ab\u00a0mailto:\u00a0\u00bb n\u00e9cessaire\u00a0?","The URL you entered seems to be an external link. Do you want to add the required http:\/\/ prefix?":"L\u2019URL que vous avez saisie semble \u00eatre un lien externe. Voulez-vous ajouter le pr\u00e9fixe \u00ab\u00a0http:\/\/\u00a0\u00bb n\u00e9cessaire\u00a0?","Color":"Couleur","Custom color":"Couleur personnalis\u00e9e","Custom...":"Personnalis\u00e9e\u2026","No color":"Aucune couleur","G":"V","Could not find the specified string.":"Impossible de trouver la cha\u00eene sp\u00e9cifi\u00e9e.","Replace":"Remplacer","Next":"Suivant","Prev":"Pr\u00e9c.","Whole words":"Mots entiers","Find and replace":"Rechercher et remplacer","Replace with":"Remplacer par","Find":"Trouver","Replace all":"Tout remplacer","Match case":"Respecter la casse","Spellcheck":"V\u00e9rifier l\u2019orthographe","Finish":"Terminer","Ignore all":"Tout ignorer","Ignore":"Ignorer","Add to Dictionary":"Ajouter au dictionnaire","Insert table":"Ins\u00e9rer un tableau","Delete table":"Supprimer le tableau","Table properties":"Propri\u00e9t\u00e9s du tableau","Row properties":"Propri\u00e9t\u00e9s de la ligne du tableau","Cell properties":"Propri\u00e9t\u00e9s de la cellule du tableau","Border color":"Couleur de bordure","Row":"Ligne","Rows":"Lignes","Column":"Colonne","Cols":"Colonnes","Cell":"Cellule","Header cell":"Cellule d\u2019en-t\u00eate","Header":"En-t\u00eate","Body":"Corps","Footer":"Pied de page","Insert row before":"Ins\u00e9rer une ligne avant","Insert row after":"Ins\u00e9rer une ligne apr\u00e8s","Insert column before":"Ins\u00e9rer une colonne avant","Insert column after":"Ins\u00e9rer une colonne apr\u00e8s","Paste row before":"Coller la ligne du tableau avant","Paste row after":"Coller la ligne du tableau apr\u00e8s","Delete row":"Supprimer la ligne","Delete column":"Supprimer la colonne","Cut row":"Couper la ligne du tableau","Copy row":"Copier la ligne du tableau","Merge cells":"Fusionner les cellules du tableau","Split cell":"Diviser une cellule du tableau","Height":"Hauteur","Width":"Largeur","Caption":"L\u00e9gende","Alignment":"Alignement","H Align":"Alignement H","Left":"Gauche","Center":"Centre","Right":"Droite","None":"Aucun","V Align":"Alignement V","Top":"Haut","Middle":"Milieu","Bottom":"Bas","Row group":"Groupe de lignes","Column group":"Groupe de colonnes","Row type":"Type de ligne","Cell type":"Type de cellule","Cell padding":"Marge int\u00e9rieure des cellules","Cell spacing":"Espacement entre les cellules","Scope":"Port\u00e9e","Insert template":"Ins\u00e9rer un mod\u00e8le","Templates":"Mod\u00e8les","Background color":"Couleur d\u2019arri\u00e8re plan","Text color":"Couleur du texte","Show blocks":"Montrer les sections","Show invisible characters":"Voir les caract\u00e8res invisibles","Words: {0}":"Mots\u00a0: {0}","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Coller est maintenant en mode texte. Les contenus seront dor\u00e9navant coll\u00e9s en mode texte jusqu\u2019\u00e0 ce que cette option soit annul\u00e9e.\n\nSi vous souhaitez utiliser du contenu riche en provenance de Microsoft Word, essayez de d\u00e9sactiver cette option. L\u2019\u00e9diteur nettoiera automatiquement les textes en provenance de Word.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"Zone de texte enrichi. Appuyez sur Alt-Maj-H pour obtenir de l\u2019aide.","Rich Text Area. Press Control-Option-H for help.":"Zone de texte enrichi. Appuyez sur Contr\u00f4le-Option-H (Ctrl-Alt-H) pour consulter l\u2019aide.","You have unsaved changes are you sure you want to navigate away?":"Les modifications que vous avez faites seront perdues si vous changez de page.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Votre navigateur ne supporte pas les acc\u00e8s directs au presse-papier. Veuillez utiliser les raccourcis clavier ou le menu \u00c9dition de votre navigateur.","Insert":"Ins\u00e9rer","File":"Fichier","Edit":"Modifier","Tools":"Outils","View":"Voir","Table":"Tableau","Toolbar Toggle":"Ouvrir\/fermer la barre d\u2019outils","Insert Read More tag":"Ins\u00e9rer la balise \u00ab\u00a0Lire la suite\u2026\u00a0\u00bb","Insert Page Break tag":"Ins\u00e9rer la balise \u00ab\u00a0Saut de page\u00a0\u00bb","Read more...":"Lire la suite\u2026","Distraction-free writing mode":"Mode d\u2019\u00e9criture sans distraction","No alignment":"Pas d\u2019alignement","Remove":"Retirer","Edit|button":"Modifier","Paste URL or type to search":"Collez l\u2019URL ou saisissez une recherche","Apply":"Appliquer","Link options":"Options du lien","Visual":"Visuel","Text":"Texte","Add Media":"Ajouter un m\u00e9dia","Keyboard Shortcuts":"Raccourcis clavier","Classic Block Keyboard Shortcuts":"Raccourcis clavier de bloc classique","Default shortcuts,":"Raccourcis par d\u00e9faut,","Additional shortcuts,":"Raccourcis suppl\u00e9mentaires,","Focus shortcuts:":"Raccourcis de s\u00e9lections\u00a0:","Inline toolbar (when an image, link or preview is selected)":"Barre d\u2019outils en ligne (quand une image, un lien ou un aper\u00e7u est s\u00e9lectionn\u00e9)","Editor menu (when enabled)":"Menu de l\u2019\u00e9diteur (lorsqu\u2019il est activ\u00e9)","Editor toolbar":"Barre d\u2019outils de l\u2019\u00e9diteur","Elements path":"Chemin des \u00e9l\u00e9ments","Ctrl + Alt + letter:":"Ctrl + Alt + lettre\u00a0:","Shift + Alt + letter:":"Shift + Alt + lettre\u00a0:","Cmd + letter:":"Cmd + lettre\u00a0:","Ctrl + letter:":"Ctrl + lettre\u00a0:","Letter":"Lettre","Warning: the link has been inserted but may have errors. Please test it.":"Attention\u00a0: le lien a bien \u00e9t\u00e9 ins\u00e9r\u00e9 mais peut contenir des erreurs. Veuillez le tester.","To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons.":"Pour d\u00e9placer la s\u00e9lection vers d\u2019autres boutons, utilisez la touche Tab ou les touches fl\u00e9ch\u00e9es. Pour revenir \u00e0 l\u2019\u00e9diteur, appuyez sur la touche \u00c9chap ou utilisez l\u2019un des boutons.","When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo.":"Lorsque vous d\u00e9marrez un nouveau paragraphe avec l\u2019un de ces raccourcis de mise en forme suivi par une espace, la mise en forme sera appliqu\u00e9e automatiquement. Appuyez sur Retour arri\u00e8re ou \u00c9chap. pour annuler.","The following formatting shortcuts are replaced when pressing Enter. Press Escape or the Undo button to undo.":"Les raccourcis de mise en forme suivants sont remplac\u00e9s en appuyant sur Entr\u00e9e. Appuyez sur \u00c9chap ou sur le bouton Annuler pour revenir en arri\u00e8re.","The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo.":"Les raccourcis de mise en forme du groupe ci-dessous s\u2019appliquent au fur et \u00e0 mesure que vous \u00e9crivez ou lorsque vous les ins\u00e9rez autour d\u2019un texte d\u2019un paragraphe. Appuyez sur \u00c9chap ou sur le bouton Annuler pour revenir en arri\u00e8re."});
+tinymce.ScriptLoader.markDone( '/wp-includes/js/tinymce/langs/fr.js' );
+</script>
+<script type="text/javascript" src="/deposerannoncefiles/wp-langs-en.js"></script>
+
+
+<%end%>
+<div class="top_panel_title top_panel_style_6  title_present breadcrumbs_present scheme_original">
+					<div class="top_panel_title_inner top_panel_inner_style_6  title_present_inner breadcrumbs_present_inner">
+						<div class="content_wrap">
+							<h1 class="page_title">Mon Compte</h1><div class="breadcrumbs"><a class="breadcrumbs_item home" href="/">Accueil</a><span class="breadcrumbs_delimiter"></span><a class="breadcrumbs_item cat_post" href="/category/espace-brocante/">Espace Brocante</a><span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Mon Compte</span></div>						</div>
+					</div>
+				</div>
+				
+			<div class="page_content_wrap page_paddings_yes">
+                
+<div class="content_wrap">
+<div class="content">
+<article class="itemscope post_item post_item_single post_featured_default post_format_standard post-1573 post type-post status-publish format-standard hentry category-espace-brocante" itemscope itemtype="//schema.org/Article"><div class="post_info">
+			<span class="post_info_item post_info_posted"> <a href="/mon-compte/" class="post_info_date date updated" itemprop="datePublished" content="2019-03-20 16:43:51">20 Mars 2019</a></span>
+				<span class="post_info_item post_info_posted_by icon-user-light vcard" itemprop="author">par <a href="/author/admin-cmdt-guyane/" class="post_info_author">VQJAYyth</a></span>
+			<span class="post_info_item post_info_counters">	<span class="post_counters_item post_counters_views icon-eye" title="Vues - 6175" href="/mon-compte/"><span class="post_counters_number">6175</span></span>
+	</span>
+		</div>
+<section class="post_content" itemprop="articleBody"><p>
+    <a href="/mon-compte/" class="adverts-button">Retour</a>
+    <a href="<%=voirannonce_path(title: @ad.title.try(:parameterize).to_s)%>" class="adverts-button">Voir annonce</a>
+</p>
+
+
+                    
+    
+<form action="" method="post" class="adverts-form adverts-form-aligned">
+    <fieldset>
+        
+                <input type="hidden" name="_post_id" id="_post_id" value="403673"  />                <input type="hidden" name="_adverts_action" id="_adverts_action" value="update"  />                <input type="hidden" name="_wpadverts_checksum" id="_wpadverts_checksum" value="95303df91c2b640522a3760627f28ecf"  />                <input type="hidden" name="_wpadverts_checksum_nonce" id="_wpadverts_checksum_nonce" value="61776d6a4b"  />                <input type="hidden" name="_post_id_nonce" id="_post_id_nonce" value="ce46a6ca7d"  />                <input type="hidden" name="_timetrap_field" id="_timetrap_field" value="ajN3L2FyRitrTHlwdlEwRHMycjRwUT09"  />                
+                
+        <div class="adverts-control-group adverts-field-header adverts-field-name-_contact_information ">
+            
+                        <div class="adverts-field-header">
+                <span class="adverts-field-header-title">Information de contact</span>
+                            </div>
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-text adverts-field-name-adverts_person ">
+            
+                        
+            <label for="adverts_person">
+                Personne de contact                                <span class="adverts-form-required">*</span>
+                            </label>
+            
+            <input type="text" name="adverts_person" id="adverts_person" value="<%=@ad.contact_person%>"  />
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-text adverts-field-name-adverts_email ">
+            
+                        
+            <label for="adverts_email">
+                E mail                                <span class="adverts-form-required">*</span>
+                            </label>
+            
+            <input type="text" name="adverts_email" id="adverts_email" value="<%=@ad.email%>"  />
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-text adverts-field-name-adverts_phone ">
+            
+                        
+            <label for="adverts_phone">
+                N° de téléphone                            </label>
+            
+            <input type="text" name="adverts_phone" id="adverts_phone"  />
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-header adverts-field-name-_item_information ">
+            
+                        <div class="adverts-field-header">
+                <span class="adverts-field-header-title">Texte d&#039;information</span>
+                            </div>
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-text adverts-field-name-post_title ">
+            
+                        
+            <label for="post_title">
+                Titre                                <span class="adverts-form-required">*</span>
+                            </label>
+            
+            <input type="text" name="post_title" id="post_title" value="<%=@ad.title%>"  />
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-select adverts-field-name-advert_category ">
+            
+                        
+            <label for="advert_category">
+                Catégorie                            </label>
+            
+            <select id="advert_category" name="advert_category[]" class=" adverts-multiselect adverts-max-choices[10]" multiple="multiple" ><option value="60" selected="selected" >Achat</option><option value="59" selected="selected" >Troc</option><option value="58" >Vente</option></select>
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-gallery adverts-field-name-gallery ">
+            
+                        
+            <label for="gallery">
+                Galerie                            </label>
+            
+            
+
+
+    <div id="adverts-plupload-upload-ui-gallery" class="adverts-plupload-upload-ui adverts-browser-frontend">
+        <div id="adverts-drag-drop-area-gallery"class="adverts-drag-drop-area">
+        
+        </div>
+        <div class="adverts-gallery">
+            <p>Déposer les fichiers ici pour les ajouter</p>
+            <p><a href="#" id="adverts-plupload-browse-button-gallery" class="adverts-plupload-browse-button adverts-button">Ajouter des images…</a></p>
+        </div>
+        <div class="adverts-gallery-uploads">
+
+        </div>
+
+    </div>
+    
+            
+        
+    
+    <script type="text/javascript">
+    if(typeof ADVERTS_PLUPLOAD_DATA === "undefined") {
+        var ADVERTS_PLUPLOAD_DATA = [];
+    }
+    ADVERTS_PLUPLOAD_DATA.push({"init":{"runtimes":"html5,silverlight,flash,html4","browse_button":"adverts-plupload-browse-button-gallery","container":"adverts-plupload-upload-ui-gallery","drop_element":"adverts-drag-drop-area-gallery","file_data_name":"async-upload","multiple_queues":true,"max_file_size":"0","url":"https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php","flash_swf_url":"https:\/\/cmdt-guyane.fr\/wp-includes\/js\/plupload\/plupload.flash.swf","silverlight_xap_url":"https:\/\/cmdt-guyane.fr\/wp-includes\/js\/plupload\/plupload.silverlight.xap","filters":[{"title":"Fichiers autoris\u00e9s","extensions":"*"}],"multipart":true,"urlstream_upload":true,"multipart_params":{"_wpadverts_checksum_nonce":"61776d6a4b","_wpadverts_checksum":"95303df91c2b640522a3760627f28ecf","action":"adverts_gallery_upload","form":"advert","field_name":"gallery"}},"data":[],"conf":{"button_class":"adverts-button","input_post_id":"#_post_id","input_post_id_nonce":"#_post_id_nonce","_wpadverts_checksum_nonce":"61776d6a4b","_wpadverts_checksum":"95303df91c2b640522a3760627f28ecf","_post_id":"403673","_post_id_nonce":"ce46a6ca7d","field_name":"gallery","form_name":"advert","save":{"method":"media-library","supports":["featured"]},"uniqid":null},"sizes":{"adverts_gallery":{"enabled":1,"width":650,"height":300,"crop":false},"adverts_list":{"enabled":1,"width":310,"height":190,"crop":true},"adverts_upload_thumbnail":{"enabled":1,"width":150,"height":105,"crop":true}}});
+    
+    if(typeof ADVERTS_IMAGE_SIZES === "undefined") {
+        var ADVERTS_IMAGE_SIZES = {"adverts_gallery":{"enabled":1,"width":650,"height":300,"crop":false},"adverts_list":{"enabled":1,"width":310,"height":190,"crop":true},"adverts_upload_thumbnail":{"enabled":1,"width":150,"height":105,"crop":true}};
+    }
+    </script>
+    
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-textarea adverts-field-name-post_content ">
+            
+                        
+            <label for="post_content">
+                Description                                 <span class="adverts-form-required">*</span>
+                            </label>
+            
+            <div id="wp-post_content-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='editor-buttons-css'  href='/wp-includes/css/editor.min.css?ver=5.4.9' type='text/css' media='all' />
+<div id="wp-post_content-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="8" autocomplete="off" cols="40" name="post_content" id="post_content">Je chercherais un violon sur le long terme à prix intéressant qui ait eu des bons musiciens</textarea></div>
+</div>
+
+
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-text adverts-field-name-adverts_price ">
+            
+                        
+            <label for="adverts_price">
+                Prix                            </label>
+            
+            <input type="text" name="adverts_price" id="adverts_price" value="1000" class="adverts-filter-money"  />
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-text adverts-field-name-adverts_location ">
+            
+                        
+            <label for="adverts_location">
+                Localité                            </label>
+            
+            <input type="text" name="adverts_location" id="adverts_location"  />
+                        
+                        
+        </div>
+                
+        <div class="adverts-control-group adverts-field-text adverts-field-name-website_address ">
+            
+                        
+            <label for="website_address">
+                Website Address                            </label>
+            
+            <input type="text" name="website_address" id="website_address" autocomplete="off"  />
+                        
+                        
+        </div>
+                
+
+        
+        <div  class="adverts-control-group adverts-field-actions">
+            
+                        <div class="adverts-moderation-notice" style="width: 100%">
+                <span class="adverts-icon-attention"></span>
+                <span>
+                <strong>Important Note.</strong> After submitting changes your Ad will be held for moderation. It will become active again once the Administrator will approve it.                </span>
+            </div>
+                        
+            <input type="submit" name="submit" value="Mise à jour" style="font-size:1.2em" />
+        </div>
+        
+    </fieldset>
+</form>
+
+				</section> <!-- </section> class="post_content" itemprop="articleBody"> -->	<section class="related_wrap related_wrap_empty"></section>
+	
+			</article> <!-- </article> class="itemscope post_item post_item_single post_featured_default post_format_standard post-1573 post type-post status-publish format-standard hentry category-espace-brocante" itemscope itemtype="//schema.org/Article"> -->
+		</div> <!-- </div> class="content"> -->	<div class="sidebar widget_area scheme_original" role="complementary">
+		<div class="sidebar_inner widget_area_inner">
+			<aside id="search-3" class="widget_number_1 widget widget_search"><form role="search" method="get" class="search_form" action="/"><input type="text" class="search_field" placeholder="Rechercher" value="" name="s" title="Rechercher" /><button type="submit" class="search_button icon-search" href="#"></button></form></aside><aside id="custom_html-2" class="widget_text widget_number_2 widget widget_custom_html"><div class="textwidget custom-html-widget">
+		<div id="wpb_wcma_menu_721" class="wpb_category_n_menu_accordion" data-accordion="false" data-indicator_icon="+" data-iconclass="">
+			<ul id="menu-menu-principal" class="wpb_category_n_menu_accordion_list"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1585"><a href="/">Accueil</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1960"><a href="/le-cmdtg/">Présentation</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2908"><a href="/historique/">Historique</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1576"><a href="/edgar-nibul/">Edgar Nibul</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1961"><a href="/le-cmdtg/">Le CMDTG</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1986"><a href="/localisation/">Localisation</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1987"><a href="/le-conseil-dadministration/">Le Conseil d’Administration</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1577"><a href="/organigramme/">Organigramme</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1988"><a href="/personnel-administratif-et-technique/">Personnel administratif et technique</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1989"><a href="/personnel-enseignant/">Personnel enseignant</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1578"><a href="/postuler-au-cmdtg/">Postuler au CMDTG</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1990"><a href="/le-logo/">Le logo</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1991"><a href="/le-logo/">Présentation du logo</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1992"><a href="/versions-telechargeables/">Versions téléchargeables</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1789"><a href="/vie-scolaire/">Vie scolaire</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3474"><a href="/inscriptions-re-inscriptions-2020-2021/">Inscriptions/Ré-inscriptions 2021-2022</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3103"><a href="/les-disciplines-2/">Les disciplines du CMDTG</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-3237"><a href="/les-departements-du-cmdtg/">Les départements du CMDTG</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2342"><a href="/musique/">Département Musique</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2343"><a href="/danse/">Département Danse</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-3241"><a href="/les-cursus-du-cmdtg/">Les cursus du CMDTG</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3131"><a href="/les-cursus/">Le cursus musique</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2911"><a href="/le-cursus-de-formation/">Le cursus danse</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1995"><a href="/reglement-interieur-des-eleves/">Règlement intérieur des élèves</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1632"><a href="/projet-detablissement/">Projet d’Etablissement</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3681"><a href="/le-reglement-des-etudes/">Règlement des études</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1886"><a href="/category/actualites/">Actualités</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2105"><a href="/category/actualites/">A la une</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type_archive menu-item-object-mec-events menu-item-2333"><a href="/evenements/">Évènements</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3712"><a href="/mediatheque/">Médiathèque</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3713"><a href="/videotheque/">Vidéothèque</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3908"><a href="/phototheque/">Photothèque</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1998"><a href="#">Location</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1584"><a href="/louer-un-instrument/">Louer un instrument</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1587"><a href="/louer-une-salle/">Louer une salle</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1792"><a target="_blank" rel="noopener noreferrer" href="https://extranet.duonet.fr/Connect.aspx?key=3lxuvwjwqDM=">DUO NET</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2334"><a href="/contactez-le-conservatoire/">Contact</a></li>
+</ul>		</div>
+
+		</div></aside><aside id="text-4" class="widget_number_3 widget widget_text"><h5 class="widget_title">Évènements</h5>			<div class="textwidget"></div>
+		</aside><aside id="mec_mec_widget-2" class="widget_number_4 widget widget_mec_mec_widget"><div id="mec_skin_839" class="mec-wrap colorskin-custom mec-widget  ">
+    
+    <div id="mec_search_form_839" class="mec-search-form mec-totalcal-box"><div class="mec-dropdown-wrap" ><div class="mec-dropdown-search">
+                    <i class="mec-sl-folder"></i><select  name=' ' id='mec_sf_category_839' class='postform' >
+	<option value='' selected='selected'>Catégorie</option>
+</select>
+</div></div><div class="mec-text-input-search">
+                    <i class="mec-sl-magnifier"></i>
+                    <input type="search" value="" id="mec_sf_s_839" />
+                </div></div>    
+    <div class="mec-calendar mec-box-calendar mec-event-calendar-classic mec-event-container-classic">
+                <div class="mec-calendar-side mec-clear">
+                        <div class="mec-skin-monthly-view-month-navigator-container">
+                <div class="mec-month-navigator" id="mec_month_navigator_839_202201"><div class="mec-previous-month mec-load-month mec-previous-month" data-mec-year="2021" data-mec-month="12"><i class="mec-sl-angle-left"></i> décembre</div><div class="mec-calendar-header"><h2>janvier 2022</h2></div><div class="mec-next-month mec-load-month mec-next-month" data-mec-year="2022" data-mec-month="02">février <i class="mec-sl-angle-right"></i></div></div>
+            </div>
+            
+            <div class="mec-calendar-table" id="mec_skin_events_839">
+                <div class="mec-month-container mec-month-container-selected" id="mec_monthly_view_month_839_202201" data-month-id="202201"><dl class="mec-calendar-table-head"><dt class="mec-calendar-day-head">LUN.</dt><dt class="mec-calendar-day-head">MAR.</dt><dt class="mec-calendar-day-head">MER.</dt><dt class="mec-calendar-day-head">JEU.</dt><dt class="mec-calendar-day-head">VEN.</dt><dt class="mec-calendar-day-head">SAM.</dt><dt class="mec-calendar-day-head">DIM.</dt></dl><dl class="mec-calendar-row">
+    <dt class="mec-table-nullday">27</dt><dt class="mec-table-nullday">28</dt><dt class="mec-table-nullday">29</dt><dt class="mec-table-nullday">30</dt><dt class="mec-table-nullday">31</dt><dt class="mec-calendar-day" data-mec-cell="20220101" data-day="1" data-month="202201">1</dt><dt class="mec-calendar-day" data-mec-cell="20220102" data-day="2" data-month="202201">2</dt></dl><div class="mec-clear"><div  class="mec-calendar-events-sec" data-mec-cell="20220101"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 1</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220102"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 2</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div></div><dl class="mec-calendar-row"><dt class="mec-calendar-day" data-mec-cell="20220103" data-day="3" data-month="202201">3</dt><dt class="mec-calendar-day" data-mec-cell="20220104" data-day="4" data-month="202201">4</dt><dt class="mec-calendar-day" data-mec-cell="20220105" data-day="5" data-month="202201">5</dt><dt class="mec-calendar-day" data-mec-cell="20220106" data-day="6" data-month="202201">6</dt><dt class="mec-calendar-day mec-has-event" data-mec-cell="20220107" data-day="7" data-month="202201"><a href="#" class="mec-has-event-a">7</a></dt>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2022-01-07",
+            "endDate": "2022-01-07",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "Auditorium de l'ENCRE",
+                "image": "",
+                "address": "Cayenne"
+                            },
+            "offers":
+            {
+                "url": "/evenements/big-band-cine-concert-et-ateliers-jazz/",
+                "price": "Gratuit",
+                "priceCurrency": "€"
+            },
+            "performer": "",
+            "description": "",
+            "image": "/wp-content/uploads/2021/12/Affiche-v1.jpg",
+            "name": "BIG BAND Ciné concert et ateliers jazz",
+            "url": "/evenements/big-band-cine-concert-et-ateliers-jazz/"
+        }
+        </script>
+        <dt class="mec-calendar-day" data-mec-cell="20220108" data-day="8" data-month="202201">8</dt><dt class="mec-calendar-day" data-mec-cell="20220109" data-day="9" data-month="202201">9</dt></dl><div class="mec-clear"><div  class="mec-calendar-events-sec" data-mec-cell="20220103"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 3</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220104"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 4</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220105"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 5</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220106"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 6</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20220107" ><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 7</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2022-01-07",
+            "endDate": "2022-01-07",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "Auditorium de l'ENCRE",
+                "image": "",
+                "address": "Cayenne"
+                            },
+            "offers":
+            {
+                "url": "/evenements/big-band-cine-concert-et-ateliers-jazz/",
+                "price": "Gratuit",
+                "priceCurrency": "€"
+            },
+            "performer": "",
+            "description": "",
+            "image": "/wp-content/uploads/2021/12/Affiche-v1.jpg",
+            "name": "BIG BAND Ciné concert et ateliers jazz",
+            "url": "/evenements/big-band-cine-concert-et-ateliers-jazz/"
+        }
+        </script>
+        <article data-style="" class="mec-past-event ended-relative mec-event-article "><div class="mec-event-image"><img width="150" height="150" src="/wp-content/uploads/2021/12/Affiche-v1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-mec-postid="403661" srcset="/wp-content/uploads/2021/12/Affiche-v1-150x150.jpg 150w, /wp-content/uploads/2021/12/Affiche-v1-300x300.jpg 300w" sizes="(max-width: 150px) 100vw, 150px" /></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 19 h 30 min</div><h4 class="mec-event-title"><a class="mec-color-hover" data-event-id="403661" href="/evenements/big-band-cine-concert-et-ateliers-jazz/">BIG BAND Ciné concert et ateliers jazz</a><span class="event-color" style="background: #fdd700"></span></h4><div class="mec-event-detail">Auditorium de l'ENCRE</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220108"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 8</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220109"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 9</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div></div><dl class="mec-calendar-row"><dt class="mec-calendar-day" data-mec-cell="20220110" data-day="10" data-month="202201">10</dt><dt class="mec-calendar-day" data-mec-cell="20220111" data-day="11" data-month="202201">11</dt><dt class="mec-calendar-day" data-mec-cell="20220112" data-day="12" data-month="202201">12</dt><dt class="mec-calendar-day" data-mec-cell="20220113" data-day="13" data-month="202201">13</dt><dt class="mec-calendar-day" data-mec-cell="20220114" data-day="14" data-month="202201">14</dt><dt class="mec-calendar-day" data-mec-cell="20220115" data-day="15" data-month="202201">15</dt><dt class="mec-calendar-day" data-mec-cell="20220116" data-day="16" data-month="202201">16</dt></dl><div class="mec-clear"><div  class="mec-calendar-events-sec" data-mec-cell="20220110"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 10</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220111"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 11</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220112"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 12</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220113"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 13</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220114"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 14</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220115"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 15</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220116"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 16</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div></div><dl class="mec-calendar-row"><dt class="mec-calendar-day" data-mec-cell="20220117" data-day="17" data-month="202201">17</dt><dt class="mec-calendar-day" data-mec-cell="20220118" data-day="18" data-month="202201">18</dt><dt class="mec-calendar-day" data-mec-cell="20220119" data-day="19" data-month="202201">19</dt><dt class="mec-calendar-day" data-mec-cell="20220120" data-day="20" data-month="202201">20</dt><dt class="mec-calendar-day" data-mec-cell="20220121" data-day="21" data-month="202201">21</dt><dt class="mec-calendar-day" data-mec-cell="20220122" data-day="22" data-month="202201">22</dt><dt class="mec-calendar-day" data-mec-cell="20220123" data-day="23" data-month="202201">23</dt></dl><div class="mec-clear"><div  class="mec-calendar-events-sec" data-mec-cell="20220117"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 17</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220118"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 18</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220119"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 19</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220120"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 20</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220121"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 21</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220122"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 22</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220123"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 23</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div></div><dl class="mec-calendar-row"><dt class="mec-calendar-day" data-mec-cell="20220124" data-day="24" data-month="202201">24</dt><dt class="mec-calendar-day" data-mec-cell="20220125" data-day="25" data-month="202201">25</dt><dt class="mec-calendar-day" data-mec-cell="20220126" data-day="26" data-month="202201">26</dt><dt class="mec-calendar-day" data-mec-cell="20220127" data-day="27" data-month="202201">27</dt><dt class="mec-calendar-day" data-mec-cell="20220128" data-day="28" data-month="202201">28</dt><dt class="mec-calendar-day mec-selected-day" data-mec-cell="20220129" data-day="29" data-month="202201">29</dt><dt class="mec-calendar-day" data-mec-cell="20220130" data-day="30" data-month="202201">30</dt></dl><div class="mec-clear"><div  class="mec-calendar-events-sec" data-mec-cell="20220124"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 24</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220125"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 25</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220126"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 26</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220127"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 27</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220128"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 28</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div id="mec-active-current" class="mec-calendar-events-sec" data-mec-cell="20220129"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 29</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div><div  class="mec-calendar-events-sec" data-mec-cell="20220130"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 30</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div></div><dl class="mec-calendar-row"><dt class="mec-calendar-day" data-mec-cell="20220131" data-day="31" data-month="202201">31</dt><dt class="mec-table-nullday">1</dt><dt class="mec-table-nullday">2</dt><dt class="mec-table-nullday">3</dt><dt class="mec-table-nullday">4</dt><dt class="mec-table-nullday">5</dt><dt class="mec-table-nullday">6</dt></dl>
+<div class="mec-clear">
+    <div  class="mec-calendar-events-sec" data-mec-cell="20220131"><h6 class="mec-table-side-title">Événements pour janvier</h6><h3 class="mec-color mec-table-side-day"> 31</h3><article class="mec-event-article"><div class="mec-event-detail">Aucun événement</div></article></div></div></div>
+            </div>
+        </div>
+            </div>
+    
+</div></aside>		</div>
+	</div> <!-- /.sidebar -->
+	
+	</div> <!-- </div> class="content_wrap"> -->			
+			</div>		<!-- </.page_content_wrap> -->
+        <%=content_for :mysuperjs do%>
+
+                <script> 
+                  
+                  jQuery(function(){
+                    
+                    jQuery('[name=_post_id]').val('<%=@ad.id%>');
+                    jQuery('[name=_wpadverts_checksum]').val('');
+                    jQuery('[name=_wpadverts_checksum_nonce]').val('');
+                    jQuery('[name=_timetrap_field]').val('');
+                    jQuery('[name=adverts_phone]').val('<%=@ad.phonenumber%>');
+                    jQuery('[name=adverts_person]').val('<%=@ad.contact_person%>');
+                    jQuery('[name=adverts_email]').val('<%=@ad.email%>');
+                    jQuery('[name=post_title]').val('<%=@ad.title%>');
+                    jQuery('[name=post_content]').val('<%=@ad.description%>');
+                    jQuery('[name=adverts_price]').val('<%=@ad.prix%>');
+                    jQuery('[name=adverts_location]').val('<%=@ad.localite%>');
+                    jQuery('[name=g-recaptcha-response]').val('');
+                    jQuery('[name=website_address]').val('');
+                    jQuery('[name=wpadverts-form-upload-uniqid]').val('');
+                    <%@ad.category_ids.each do |t|%>
+                    jQuery("[name='advert_category[]'][value=<%=t%>]").attr('checked',true);
+                    <%end%>
+                    <%@ad.notcategory_ids.each do |t|%>
+                    jQuery("[name='advert_category[]'][value=<%=t%>]").attr('checked',false);
+                    <%end%>
+
+                      <%if params[:action] == "updatead"%>
+                        jQuery("<div class=\"adverts-flash-messages adverts-flash-info\">        <div class=\"adverts-flash-single\">    <span class=\"adverts-flash-message-icon adverts-icon-ok\"><\/span>  <span class=\"adverts-flash-message-text adverts-flash-padding\">Le post a été mis à jour.<\/span>    <\/div>   <\/div>").insertBefore(".adverts-form");
+                        <%end%>
+                  });
+        </script>                
+
+
+              
+
+        
+        <%end%>	

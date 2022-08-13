@@ -1,0 +1,24 @@
+{
+	"month": "<%= j (render partial: "contenumois",formats: [:html],locals: {mois: mois})%>",
+      "events_side": "",
+	"navigator": "<%= j (render partial: "navigatorbis", formats: [:html],locals: {mois: mois})%>",
+	
+      "previous_month": {
+		"label": "<%=mois.prevmonthyear%> <%=mois.prevmonthname%>",
+		"id": "<%=mois.prevmonthid%>",
+		"year": "<%=mois.prevmonthyear%>",
+		"month": "<%=mois.prevmonthshortid%>"
+	},
+	"current_month": {
+		"label": "<%=mois.monthyear%> <%=mois.monthname%>",
+		"id": "<%=mois.monthid%>",
+		"year": "<%=mois.monthyear%>",
+		"month": "<%=mois.monthshortid%>"
+	},
+	"next_month": {
+		"label": "<%=mois.nextmonthyear%> <%=mois.nextmonthname%>",
+		"id": "<%=mois.nextmonthid%>",
+		"year": "<%=mois.nextmonthyear%>",
+		"month": "<%=mois.nextmonthshortid%>"
+	}
+}

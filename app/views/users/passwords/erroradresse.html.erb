@@ -1,0 +1,34 @@
+	<script type="text/javascript">
+		document.body.className = document.body.className.replace('no-js','js');
+	</script>
+		<div id="login">
+		<h1><a href="#">Propulsé par WordPress</a></h1>
+	<p class="message">Merci de renseigner votre identifiant ou votre adresse de messagerie. Vous recevrez un e-mail contenant les instructions vous permettant de réinitialiser votre mot de passe.</p>
+<div id="login_error">	<strong>Erreur</strong> : il n’y a pas de compte avec cet identifiant ou cette adresse de messagerie.<br />
+</div>
+
+		<form name="lostpasswordform" id="lostpasswordform" action="/wp-login.php?actions=lostpassword" method="post">
+			<p>
+				<label for="user_login">Identifiant ou adresse e-mail</label>
+				<input type="text" name="user_login" id="user_login" class="input" value="<%=params[:user_login]%>" size="20" autocapitalize="off" />
+			</p>
+						<input type="hidden" name="redirect_to" value="" />
+			<p class="submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Générer un mot de passe" />
+			</p>
+		</form>
+
+		<p id="nav">
+			<a href="/wp-login.php">Connexion</a>
+					</p>
+				<p id="backtoblog"><a href="/">
+		&larr; Retour vers Conservatoire de Musique, Danse et Théâtre de Guyane		</a></p>
+			</div>
+			<script type="text/javascript">
+		try{document.getElementById('user_login').focus();}catch(e){}
+		if(typeof wpOnload=='function')wpOnload();
+		</script>
+			<script type="text/javascript">
+	document.querySelector('form').classList.add('shake');
+	</script>
+		<div class="clear"></div>

@@ -1,0 +1,127 @@
+<%@range.each do |range|%>
+<div class="toutereservation">
+<h1><%=@event.name.upcase%></h1>
+<div class="qr">
+        <div class="qr1">
+      <%= image_tag Event.qrcode, width: "100%", class: "attachment-meccarouselthumb size-meccarouselthumb wp-post-image", alt: "", data: {"mec-postid" => @event.id}%>
+
+    </div>
+    <div class="qr2">
+      <br><%=l(@event.startDate, format: :longavecjour)%><br>
+<br><%=l(@event.time, format: :shortclock)%><br>
+
+    </div>
+    <div class="qr3">
+
+        <br><span class="nameplace"><%=@event.place.try(:name)%></span>
+                                                                    
+                                                                    
+                                                                    <br>
+                                                                    
+                                                                    <%=@event.try(:fulladdress)%>
+                                                                    <br>
+                                                                    <%=@event.country.try(:name)%>
+
+    </div>
+    
+
+                                                                    
+                                                                    
+</div>
+<div class="concert">
+        <div class="invitation">
+                                                                    <br>
+                                                                   
+                                                                    <h2><%=@ticket.buyer.try(:fullname)%></h2>
+                                                                     INVITATION
+
+                                                                    
+                                                                    <br>
+                                                                    <br>
+<%= image_tag @event.mypic, width: "474", height: "724" ,class: "attachment-meccarouselthumb size-meccarouselthumb wp-post-image", alt: "", data: {"mec-postid" => @event.id}%>
+      
+    </div>
+    <div class="invitinfos">
+        <div class="idbillet">
+            <div>
+                                                                    
+                                                                    N'imprimez pas deux fois le même billet
+            </div>
+            <div > N° <span class="nobillet"><%=range%></span></div> 
+
+        </div>
+        <br> <br>
+              <%= image_tag Event.codeabarre, width: "100%", class: "codeabarre size-meccarouselthumb wp-post-image", alt: "", data: {"mec-postid" => @event.id}%>
+ <br>
+                                                                            <br>
+                                                                            <div class="questions">
+                                                                    POUR TOUTE QUESTION, CONTACTEZ :<br>
+
+CMDTG<br>
+0594298131<br>
+communication@cmdt-guyane.fr<br>
+http://www.cmdt-guyane.fr/
+                                                                            </div>
+              <div class="commande">
+                                                                  
+                                                                            
+COMMANDE : <%=@event.commande(@ticket.id)%><br>
+DATE : <%=l(@event.startDate.to_date, format: :dateslashes)%><br>
+NOM : <%=@ticket.buyer.try(:fullname)%><br>
+BILLET : <%=@ticket.billet(range)%><br>
+<span class="ttc">PRIX TTC : <%=@ticket.price%> TTC FRAIS INCLUS</span><br>
+<span class="tva">DONT TVA 0% : 0,00 €</span><br>
+    </div>
+<p class="cgv">
+    
+    CONDITIONS GÉNÉRALES DE VENTE<br>
+Pour être valable, ce e-ticket (billet électronique) est soumis aux conditions générales de
+vente de Weezevent, et le cas échéant à celles de l'organisateur que vous avez acceptées
+lors de la commande. RAPPEL : Ce e-ticket est non remboursable. Sauf accord contraire de
+l'organisateur, ce e-ticket est personnel, incessible et non échangeable. CONTRÔLE :
+L'accès à l'événement est soumis au contrôle de validité de votre e-ticket. Ce e-ticket est
+uniquement valable pour le lieu, la séance, la date et l'heure précis de l'événement. Passée
+l'heure de début, l'accès à l'événement n'est plus garanti et ne donne droit à aucun
+remboursement. Nous vous conseillons par conséquent d'arriver avant le début de
+l'événement. Pour être valable ce e-ticket doit être imprimé sur du papier A4 blanc vierge
+recto et verso, sans modification du format d'impression et en bonne qualité. Les e-tickets
+partiellement imprimés, souillés, endommagés ou illisibles seront considérés comme non
+valables et pourront être refusés par l'organisateur. L'organisateur se réserve également le
+droit d'accepter ou refuser les autres supports, notamment électroniques (téléphone
+portable, tablette, etc.). Chaque e-ticket est muni d'un code barre permettant l'accès à
+l'événement à une seule personne. Pour être valable ce e-ticket ne doit pas avoir fait l'objet
+d'une opposition ou d'un impayé sur la carte bancaire utilisée pour la commande, auquel
+cas le code-barre serait désactivé. Lors des contrôles, vous devez obligatoirement être
+muni d'une pièce d'identité officielle avec photo et en cours de validité. Suite au contrôle,
+ce e-ticket doit être conservé jusqu'à la fin de l'événement. Dans certains cas l'organisateur
+vous remettra un billet à 2 souches (faisant ou non apparaître les frais de location).
+FRAUDE : Il est interdit de reproduire, d'utiliser une copie, de dupliquer, de contrefaire ce
+e-ticket de quelque manière que ce soit, sous peine de poursuites pénales. De même, toute
+commande effectuée à l'aide d'un moyen de paiement illicite pour se procurer un e-ticket
+entraînera des poursuites pénales et l'invalidité de ce e-ticket. RESPONSABILITE :
+L'acheteur demeure responsable de l'utilisation qui est faite des e-tickets, ainsi en cas de
+perte, de vol ou de duplication d'un e-ticket valide, seule la première personne détentrice du
+e-ticket pourra accéder à l'événement. Weezevent décline toute responsabilité pour les
+anomalies pouvant survenir en cours de commande, de traitement ou d'impression du
+e-ticket dans la mesure où elle ne les a pas provoquées intentionnellement ou par suite de
+négligence en cas de perte, vol ou utilisation illicite du e-ticket. L'EVENEMENT : Les
+événements restent et demeurent sous la seule responsabilité de l'organisateur.
+L'acquisition de ce e-ticket emporte le cas échéant adhésion au règlement intérieur du lieu
+de l'événement et/ou de l'organisateur. En cas d'annulation ou de report de l'événement, le
+remboursement de ce billet hors frais annexes (transports, hôtellerie, etc.) sera soumis aux
+conditions de l'organisateur (vous trouverez son e-mail ci-dessus dans Informations
+complémentaires) qui perçoit les recettes de la vente des e-tickets.
+</p>
+              <%=image_tag Event.codeabarre, width: "100%", class: "codeabarre2 size-meccarouselthumb wp-post-image", alt: "", data: {"mec-postid" => @event.id}%>
+<div class="weezeventcadre">
+    <p>  <%=image_tag Event.weezevent, class: " size-meccarouselthumb wp-post-image", alt: "", data: {"mec-postid" => @event.id}%>
+    </p>
+    <p class="event1">Vous organisez des événements ?</p>
+    <p class="event2">Créez simplement sur www.weezevent.com votre module d'inscription
+        et de billetterie en ligne et vendez en un clic !</p>
+</div>
+    </div>
+            
+</div>
+</div>
+<%end%>

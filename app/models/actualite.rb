@@ -1,0 +1,3 @@
+class Actualite < Article
+  
+end

@@ -1,0 +1,12 @@
+class Article < ApplicationRecord
+  def self.allmyarticles(i)
+    all.each_slice(10).to_a[i.to_i]
+  end
+  def self.pages(t)
+    k=all.each_slice(10).to_a.length
+    (1..(k + 1))
+  end
+  def self.findbytitle(t)
+    find_by_url(t)
+  end
+end

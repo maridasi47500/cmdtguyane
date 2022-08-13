@@ -1,0 +1,49 @@
+
+    <div class="mec-calendar-events-sec" data-mec-cell="<%=jour.dayid%>" style="">
+        <h6 class="mec-table-side-title">Événements pour <%=jour.monthname%></h6><h3 class="mec-color mec-table-side-day"> <%=jour.daynumber%></h3>        
+        
+        <%if !Event.many?(jour.ajd)%>
+        <article data-style="" class="mec-event-article ">
+
+        <div class="mec-event-detail">Aucun évènement</div>
+        </article>
+<%else%>
+<%Event.many(jour.ajd).each do |e|%>
+                <article data-style="" class="<%=Event.manyexpired?(jour.ajd) ? "mec-past-event" : ""%> ended-relative mec-event-article ">
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "startDate": "<%=l(e.startDate, format: :jsonfile)%>",
+    "endDate": "<%=l(e.endDate, format: :jsonfile)%>",
+    "location":
+    {
+        "@type": "Place",
+                        "name": "<%=e.place.try(:name)%>",
+        "image": "<%=e.place.try(:image)%>",
+        "address": "<%=e.place.try(:address)%>"
+                    },
+    "offers":
+    {
+        "url": "<%=e.url%>",
+        "price": "<%=e.price%>",
+        "priceCurrency": "<%=e.priceCurrency%>"
+    },
+    "performer": "<%=e.performer%>",
+    "description": "<%=e.description%>",
+    "image": "<%=e.image%>",
+    "name": "<%=e.name%>",
+    "url": "<%=e.url%>"
+}
+</script>
+
+        <div class="mec-event-image">
+<img src="<%=e.image%>" class="attachment-medium size-medium wp-post-image" alt="" data-mec-postid="<%=e.id%>" srcset="" sizes="(max-width: 212px) 100vw, 212px" width="150" height="150"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> <%=l(e.time.to_time, format: :heureminute)%></div><h4 class="mec-event-title"><a class="mec-color-hover" data-event-id="<%=e.id%>" href="<%=e.url%>"><%=e.name%></a><span class="event-color" style="background: #fdd700"></span></h4><div class="mec-event-detail"><%=e.place.try(:name)%></div>
+        </article>
+
+<%end%>
+<%end%>
+
+</div>

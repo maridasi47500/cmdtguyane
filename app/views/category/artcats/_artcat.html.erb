@@ -1,0 +1,6 @@
+<%=artcat.cat_parent ? (render artcat.cat_parent) : nil%>
+<span class="breadcrumbs_delimiter"></span>
+<%=link_to_unless_current(artcat.title, artcat.url) do
+  ('<span class="breadcrumbs_item current">'+artcat.title+'</span>').html_safe
+  
+end%>

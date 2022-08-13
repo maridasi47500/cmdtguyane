@@ -1,0 +1,303 @@
+<%=content_for :mycss do%>
+<!--
+  <link rel="stylesheet" id="mec-select2-style-css" href="/evenementfiles/select2.css" type="text/css" media="all">
+  <link rel="stylesheet" id="mec-font-icons-css" href="/evenementfiles/iconfonts.css" type="text/css" media="all">
+  <link rel="stylesheet" id="mec-frontend-style-css" href="/evenementfiles/frontend.css" type="text/css" media="all">
+  <link rel="stylesheet" id="mec-tooltip-style-css" href="/evenementfiles/tooltip.css" type="text/css" media="all">
+  <link rel="stylesheet" id="mec-tooltip-shadow-style-css" href="/evenementfiles/tooltipster-sideTip-shadow.css" type="text/css" media="all">
+  <link rel="stylesheet" id="mec-featherlight-style-css" href="/evenementfiles/featherlight.css" type="text/css" media="all">
+  <link rel="stylesheet" id="mec-google-fonts-css" href="/evenementfiles/css_002.css" type="text/css" media="all">
+  <link rel="stylesheet" id="mec-dynamic-styles-css" href="/evenementfiles/dyncss.css" type="text/css" media="all">
+  <style id="mec-dynamic-styles-inline-css" type="text/css">
+      .mec-timeline-month-divider,  .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic .mec-selected-day,.mec-wrap.colorskin-custom .mec-color, .mec-wrap.colorskin-custom .mec-event-sharing-wrap .mec-event-sharing > li:hover a, .mec-wrap.colorskin-custom .mec-color-hover:hover, .mec-wrap.colorskin-custom .mec-color-before *:before ,.mec-wrap.colorskin-custom .mec-widget .mec-event-grid-classic.owl-carousel .owl-nav i,.mec-wrap.colorskin-custom .mec-event-list-classic a.magicmore:hover,.mec-wrap.colorskin-custom .mec-event-grid-simple:hover .mec-event-title,.mec-wrap.colorskin-custom .mec-single-event .mec-event-meta dd.mec-events-event-categories:before,.mec-wrap.colorskin-custom .mec-single-event-date:before,.mec-wrap.colorskin-custom .mec-single-event-time:before,.mec-wrap.colorskin-custom .mec-events-meta-group.mec-events-meta-group-venue:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month i,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic dt.mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-infowindow-wp h5 a:hover, .colorskin-custom .mec-events-meta-group-countdown .mec-end-counts h3,.mec-calendar .mec-calendar-side .mec-next-month i,.mec-wrap .mec-totalcal-box i,.mec-calendar .mec-event-article .mec-event-title a:hover,.mec-attendees-list-details .mec-attendee-profile-link a:hover,.mec-wrap.colorskin-custom .mec-next-event-details li i, .mec-next-event-details i:before, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-next-event-details a,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected,.lity .mec-color,.lity .mec-color-before :before,.lity .mec-color-hover:hover,.lity .mec-wrap .mec-color,.lity .mec-wrap .mec-color-before :before,.lity .mec-wrap .mec-color-hover:hover,.leaflet-popup-content .mec-color,.leaflet-popup-content .mec-color-before :before,.leaflet-popup-content .mec-color-hover:hover,.leaflet-popup-content .mec-wrap .mec-color,.leaflet-popup-content .mec-wrap .mec-color-before :before,.leaflet-popup-content .mec-wrap .mec-color-hover:hover, .mec-calendar.mec-calendar-daily .mec-calendar-d-table .mec-daily-view-day.mec-daily-view-day-active.mec-color, .mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail i,.mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail:hover,.mec-map-boxshow .mec-color,.mec-map-boxshow .mec-color-before :before,.mec-map-boxshow .mec-color-hover:hover,.mec-map-boxshow .mec-wrap .mec-color,.mec-map-boxshow .mec-wrap .mec-color-before :before,.mec-map-boxshow .mec-wrap .mec-color-hover:hover{color: #2aaae1}.mec-wrap .mec-map-lightbox-wp.mec-event-list-classic .mec-event-date,.mec-wrap.colorskin-custom .mec-event-sharing .mec-event-share:hover .event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-grid-clean .mec-event-date,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing li:hover a i,.mec-wrap.colorskin-custom .mec-calendar:not(.mec-event-calendar-classic) .mec-selected-day,.mec-wrap.colorskin-custom .mec-calendar .mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-row  dt.mec-has-event:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-has-event:after, .mec-wrap.colorskin-custom .mec-bg-color, .mec-wrap.colorskin-custom .mec-bg-color-hover:hover, .colorskin-custom .mec-event-sharing-wrap:hover > li, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .flip-clock-wrapper ul li a div div.inn,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel,.mec-event-countdown-style3 .mec-event-date,#wrap .mec-wrap article.mec-event-countdown-style1,.mec-event-countdown-style1 .mec-event-countdown-part3 a.mec-event-button,.mec-wrap .mec-event-countdown-style2,.mec-map-get-direction-btn-cnt input[type="submit"],.mec-booking button,span.mec-marker-wrap,.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:before{background-color: #2aaae1;}.mec-timeline-month-divider, .mec-wrap.colorskin-custom .mec-single-event .mec-speakers-details ul li .mec-speaker-avatar a:hover img,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-standard .mec-month-divider span:before,.mec-wrap.colorskin-custom .mec-single-event .mec-social-single:before,.mec-wrap.colorskin-custom .mec-single-event .mec-frontbox-title:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-events-side .mec-table-side-day, .mec-wrap.colorskin-custom .mec-border-color, .mec-wrap.colorskin-custom .mec-border-color-hover:hover, .colorskin-custom .mec-single-event .mec-frontbox-title:before, .colorskin-custom .mec-single-event .mec-events-meta-group-booking form > h4:before, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel:after,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-wrap.colorskin-custom .mec-events-masonry-cats a:hover{border-color: #2aaae1;}.mec-wrap.colorskin-custom .mec-event-countdown-style3 .mec-event-date:after,.mec-wrap.colorskin-custom .mec-month-divider span:before{border-bottom-color:#2aaae1;}.mec-wrap.colorskin-custom  article.mec-event-countdown-style1 .mec-event-countdown-part2:after{border-color: transparent transparent transparent #2aaae1;}.mec-wrap.colorskin-custom .mec-box-shadow-color { box-shadow: 0 4px 22px -7px #2aaae1;}.mec-events-timeline-wrap:before, .mec-wrap.colorskin-custom .mec-timeline-event-local-time, .mec-wrap.colorskin-custom .mec-timeline-event-time ,.mec-wrap.colorskin-custom .mec-timeline-event-location { background: rgba(42,170,225,.11);}.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:after { background: rgba(42,170,225,.3);}
+  </style>
+  <link rel="stylesheet" id="mec-lity-style-css" href="/evenementfiles/lity.css" type="text/css" media="all">
+  <link rel="stylesheet" id="user-registration-general-css" href="/evenementfiles/user-registration.css" type="text/css" media="all">
+  <link rel="stylesheet" id="user-registration-smallscreen-css" href="/evenementfiles/user-registration-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
+  <link rel="stylesheet" id="user-registration-my-account-layout-css" href="/evenementfiles/my-account-layout.css" type="text/css" media="all">
+  <link rel="stylesheet" id="sweetalert2-css" href="/evenementfiles/sweetalert2.css" type="text/css" media="all">
+  <link rel="stylesheet" id="dashicons-css" href="/evenementfiles/dashicons.css" type="text/css" media="all">
+  <link rel="stylesheet" id="wp-block-library-css" href="/evenementfiles/style_003.css" type="text/css" media="all">
+  <link rel="stylesheet" id="contact-form-7-css" href="/evenementfiles/styles.css" type="text/css" media="all">
+  <link rel="stylesheet" id="essential-grid-plugin-settings-css" href="/evenementfiles/settings.css" type="text/css" media="all">
+  <link rel="stylesheet" id="tp-fontello-css" href="/evenementfiles/fontello_002.css" type="text/css" media="all">
+  <link rel="stylesheet" id="gdpr-framework-cookieconsent-css-css" href="/evenementfiles/cookieconsent.css" type="text/css" media="all">
+  <link rel="stylesheet" id="rs-plugin-settings-css" href="/evenementfiles/rs6.css" type="text/css" media="all">
+  <style id="rs-plugin-settings-inline-css" type="text/css">
+      #rs-demo-id {}
+  </style>
+  <link rel="stylesheet" id="wpb_wmca_accordion_style-css" href="/evenementfiles/wpb_wmca_style.css" type="text/css" media="all">
+  <link rel="stylesheet" id="parent-style-css" href="/evenementfiles/style.css" type="text/css" media="all">
+  <link rel="stylesheet" id="melodyschool-font-google-fonts-style-css" href="/evenementfiles/css.css" type="text/css" media="all">
+  <link rel="stylesheet" id="fontello-style-css" href="/evenementfiles/fontello.css" type="text/css" media="all">
+  <link rel="stylesheet" id="melodyschool-main-style-css" href="/evenementfiles/style_002.css" type="text/css" media="all">
+  <link rel="stylesheet" id="melodyschool-animation-style-css" href="/evenementfiles/core.css" type="text/css" media="all">
+  <link rel="stylesheet" id="melodyschool-shortcodes-style-css" href="/evenementfiles/theme_002.css" type="text/css" media="all">
+  <link rel="stylesheet" id="melodyschool-theme-style-css" href="/evenementfiles/theme.css" type="text/css" media="all">
+  <style id="melodyschool-theme-style-inline-css" type="text/css">
+      .menu_side_nav>li ul,.menu_main_nav>li ul{width:300px}.menu_side_nav>li>ul ul,.menu_main_nav>li>ul ul{left:304px}.menu_side_nav>li>ul ul.submenu_left,.menu_main_nav>li>ul ul.submenu_left{left:-301px} .contacts_wrap .logo img{height:30px}
+  </style>
+  <link rel="stylesheet" id="melodyschool-responsive-style-css" href="/evenementfiles/responsive.css" type="text/css" media="all">
+  <link rel="stylesheet" id="mediaelement-css" href="/evenementfiles/mediaelementplayer-legacy.css" type="text/css" media="all">
+  <link rel="stylesheet" id="wp-mediaelement-css" href="/evenementfiles/wp-mediaelement.css" type="text/css" media="all">-->
+  <!--[if lt IE 9]>
+  <link rel='stylesheet' id='vc_lte_ie9-css'  href='/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css?ver=6.0.5' type='text/css' media='screen' />
+  <![endif]-->
+  <link rel="stylesheet" id="custom-frontend-style-css" href="/evenementfiles/frontendstyle.css" type="text/css" media="all">
+  <style id="custom-frontend-style-inline-css" type="text/css">
+      #wp-admin-bar-wp-logo,#wp-admin-bar-customize,#wp-admin-bar-updates,#wp-admin-bar-vc_inline-admin-bar-link,#wp-admin-bar-edit-profile,#wp-admin-bar-user-info {display: none !important;}
+  </style>
+  <script type="text/javascript" src="/evenementfiles/jquery_003.js"></script>
+  <script type="text/javascript" src="/evenementfiles/jquery-migrate.js"></script>
+  <script type="text/javascript" src="/evenementfiles/jquery_002.js"></script>
+  <script type="text/javascript" src="/evenementfiles/featherlight.js"></script>
+  <script type="text/javascript" src="/evenementfiles/select2.js"></script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var mecdata = {"day": "jour", "days": "jours", "hour": "heure", "hours": "heures", "minute": "minute", "minutes": "minutes", "second": "seconde", "seconds": "secondes", "elementor_edit_mode": "no", "recapcha_key": "", "ajax_url": "https:\/\/cmdt-guyane.fr\/wp-admin\/admin-ajax.php", "fes_nonce": "af85b9cc64", "current_year": "2022", "datepicker_format": "dd.mm.yy&d.m.Y"};
+    /* ]]> */
+  </script>
+  <script type="text/javascript" src="/evenementfiles/tooltip.js"></script>
+  <script type="text/javascript" src="/evenementfiles/events.js"></script>
+  <script type="text/javascript" src="/evenementfiles/lity.js"></script>
+  <script type="text/javascript" src="/evenementfiles/colorbrightness.js"></script>
+  <script type="text/javascript" src="/evenementfiles/owl.js"></script>
+  <script type="text/javascript" src="/evenementfiles/cookieconsent_002.js"></script>
+  <script type="text/javascript" src="/evenementfiles/revolution.js"></script>
+  <script type="text/javascript" src="/evenementfiles/rs6.js"></script>
+  <script type="text/javascript" src="/evenementfiles/jquery_005.js"></script>
+  <script type="text/javascript" src="/evenementfiles/jquery.js"></script>
+  <script type="text/javascript" src="/evenementfiles/modernizr.js"></script>
+  <link rel="stylesheet" id="mec-owl-carousel-style-css" href="/evenementfiles/owl_002.css" type="text/css" media="all">
+
+  <link rel="stylesheet" id="mec-owl-carousel-theme-style-css" href="/evenementfiles/owl.css" type="text/css" media="all">
+
+<%end%>
+
+
+
+<div class="top_panel_title top_panel_style_6  title_present breadcrumbs_present scheme_original">
+    <div class="top_panel_title_inner top_panel_inner_style_6  title_present_inner breadcrumbs_present_inner">
+        <div class="content_wrap">
+            <h1 class="page_title">Conservatoire de Musique, Danse et Théâtre de Guyane</h1><div class="breadcrumbs"></div>						</div>
+    </div>
+</div>
+
+<div class="page_content_wrap page_paddings_yes">
+
+    <div class="content_wrap">
+        <div class="content">	
+            <section id="main-content" class="mec-container">
+
+
+
+
+                <h1>Évènements</h1>
+                            <%if Event.eventstocome?%>
+                 <div class="mec-wrap mec-skin-list-container" id="mec_skin_idk">
+    
+    
+            <div class="mec-skin-list-events-container" id="mec_skin_events_idk">
+        <div class="mec-wrap colorskin-custom">
+	<div class="mec-event-list-classic">
+		<%Event.futureevents.each do |monthyear, events|%>
+  <div class="mec-month-divider" data-toggle-divider="mec-toggle-<%=monthyear[1]%>-idk"><span><%=monthyear[0]%></span><i class="mec-sl-arrow-down"></i></div>
+
+            <%=render partial: "events/eventstocome", collection: events, as: :event%>
+            <%end%>
+                </div>
+</div>
+
+    </div>
+    <div class="mec-skin-list-no-events-container mec-util-hidden" id="mec_skin_no_events_idk">
+        Pas d'événement actuellement programmé.    </div>
+        
+        
+</div>
+            <%else%>
+
+                <div class="mec-wrap mec-skin-list-container  " id="mec_skin_764">
+
+
+                    <div class="mec-skin-list-events-container" id="mec_skin_events_764">
+                        Pas d'événement actuellement programmé.    </div>
+
+
+                </div>
+                
+            <%end%>
+
+
+            </section>
+
+
+
+        </div> <!-- </div> class="content"> -->	<div class="sidebar widget_area scheme_original" role="complementary">
+            <div class="sidebar_inner widget_area_inner">
+                <aside id="search-3" class="widget_number_1 widget widget_search"><form role="search" method="get" class="search_form" action="/"><input type="text" class="search_field" placeholder="Rechercher" value="" name="s" title="Rechercher" /><button type="submit" class="search_button icon-search" href="#"></button></form></aside><aside id="custom_html-2" class="widget_text widget_number_2 widget widget_custom_html"><div class="textwidget custom-html-widget">
+                        <div id="wpb_wcma_menu_948" class="wpb_category_n_menu_accordion" data-accordion="false" data-indicator_icon="+" data-iconclass="">
+                            <ul id="menu-menu-principal" class="wpb_category_n_menu_accordion_list"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1585"><a href="/">Accueil</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1960"><a href="/le-cmdtg/">Présentation</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2908"><a href="/historique/">Historique</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1576"><a href="/edgar-nibul/">Edgar Nibul</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1961"><a href="/le-cmdtg/">Le CMDTG</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1986"><a href="/localisation/">Localisation</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1987"><a href="/le-conseil-dadministration/">Le Conseil d’Administration</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1577"><a href="/organigramme/">Organigramme</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1988"><a href="/personnel-administratif-et-technique/">Personnel administratif et technique</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1989"><a href="/personnel-enseignant/">Personnel enseignant</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1578"><a href="/postuler-au-cmdtg/">Postuler au CMDTG</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1990"><a href="/le-logo/">Le logo</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1991"><a href="/le-logo/">Présentation du logo</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1992"><a href="/versions-telechargeables/">Versions téléchargeables</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-1789"><a href="/vie-scolaire/">Vie scolaire</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3474"><a href="/inscriptions-re-inscriptions-2020-2021/">Inscriptions/Ré-inscriptions 2021-2022</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3103"><a href="/les-disciplines-2/">Les disciplines du CMDTG</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-3237"><a href="/les-departements-du-cmdtg/">Les départements du CMDTG</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2342"><a href="/musique/">Département Musique</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2343"><a href="/danse/">Département Danse</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-3241"><a href="/les-cursus-du-cmdtg/">Les cursus du CMDTG</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3131"><a href="/les-cursus/">Le cursus musique</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2911"><a href="/le-cursus-de-formation/">Le cursus danse</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1995"><a href="/reglement-interieur-des-eleves/">Règlement intérieur des élèves</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1632"><a href="/projet-detablissement/">Projet d’Etablissement</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3681"><a href="/le-reglement-des-etudes/">Règlement des études</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1886"><a href="/category/actualites/">Actualités</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2105"><a href="/category/actualites/">A la une</a></li>
+                                        <li class="menu-item menu-item-type-post_type_archive menu-item-object-mec-events current-menu-item menu-item-2333"><a href="/evenements/" aria-current="page">Évènements</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3712"><a href="/mediatheque/">Médiathèque</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3713"><a href="/videotheque/">Vidéothèque</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3908"><a href="/phototheque/">Photothèque</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1998"><a href="#">Location</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1584"><a href="/louer-un-instrument/">Louer un instrument</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1587"><a href="/louer-une-salle/">Louer une salle</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1792"><a target="_blank" rel="noopener noreferrer" href="https://extranet.duonet.fr/Connect.aspx?key=3lxuvwjwqDM=">DUO NET</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2334"><a href="/contactez-le-conservatoire/">Contact</a></li>
+                            </ul>		</div>
+
+                    </div></aside>
+               <aside id="titrecalendrier" class="widget_number_3 widget widget_text"><h5 class="widget_title">Évènements</h5>			<div class="textwidget"></div>
+                </aside>
+                
+                <aside id="contenucalendrier" class="widget_number_4 widget widget_mec_mec_widget"><div id="mec_skin_974" class="mec-wrap colorskin-custom mec-widget">
+
+                        <div id="mec_search_form_974" class="mec-search-form mec-totalcal-box"><div class="mec-dropdown-wrap"><div class="mec-dropdown-search">
+                                    <i class="mec-sl-folder"></i><select name=" " id="mec_sf_category_974" class="postform">
+                                        <option value="" selected="selected">Catégorie</option>
+                                    </select>
+                                </div></div><div class="mec-text-input-search">
+                                <i class="mec-sl-magnifier"></i>
+                                <input type="search" id="mec_sf_s_974">
+                            </div></div>    
+                        <div class="mec-calendar mec-box-calendar mec-event-calendar-classic mec-event-container-classic">
+                            <div class="mec-calendar-side mec-clear">
+                                <div class="mec-skin-monthly-view-month-navigator-container">
+<%=render partial: 'navigator', collection: @calendar, as: :mois%>                                
+                                </div>
+
+                                <div class="mec-calendar-table" id="mec_skin_events_974">
+                                    <%=render partial: 'mois', collection: @calendar, as: :mois%>
+                                      
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div></aside>		
+                		</div>
+        </div> <!-- /.sidebar -->
+
+    </div> <!-- </div> class="content_wrap"> -->			
+</div>		<!-- </.page_content_wrap> -->
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  jQuery(document).ready(function ()
+  {
+      jQuery("#mec_skin_846").mecListView(
+              {
+                  id: "846",
+                  start_date: "2022-01-15",
+                  end_date: "2022-01-15",
+                  offset: "0",
+                  limit: "12",
+                  current_month_divider: "0",
+                  toggle_month_divider: "0",
+                  style: "classic",
+                  atts: "atts%5Bsk-options%5D%5Blist%5D%5Bstyle%5D=classic&atts%5Bid%5D=846",
+                  ajax_url: "/wp-admin/admin-ajax.php",
+                  sed_method: "0",
+                  image_popup: "0",
+                  sf:
+                          {
+                              container: "#mec_search_form_846",
+                          },
+              });
+  });
+</script>
+<script type="text/javascript">
+  jQuery(document).ready(function (jQuery) {
+    jQuery.datepicker.setDefaults({"closeText": "Fermer", "currentText": "Aujourd\u2019hui", "monthNames": ["janvier", "f\u00e9vrier", "mars", "avril", "mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre"], "monthNamesShort": ["Jan", "F\u00e9v", "Mar", "Avr", "Mai", "Juin", "Juil", "Ao\u00fbt", "Sep", "Oct", "Nov", "D\u00e9c"], "nextText": "Suivant", "prevText": "Pr\u00e9c\u00e9dent", "dayNames": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"], "dayNamesShort": ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"], "dayNamesMin": ["D", "L", "M", "M", "J", "V", "S"], "dateFormat": "d MM yy", "firstDay": 1, "isRTL": false});
+  });
+</script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function ()
+  {
+      jQuery("#mec_monthly_view_month_974_202201").mecMonthlyView(
+              {
+                  id: "974",
+                  today: "20220115",
+                  month_id: "202201",
+                  active_month: {year: "2022", month: "01"},
+                  next_month: {year: "2022", month: "02"},
+                  events_label: "Évenements",
+                  event_label: "Événement",
+                  month_navigator: 1,
+                  atts: "atts%5Blabel%5D=&atts%5Bcategory%5D=&atts%5Blocation%5D=&atts%5Borganizer%5D=&atts%5Btag%5D=&atts%5Bauthor%5D=&atts%5Bskin%5D=monthly_view&atts%5Bshow_past_events%5D=1&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bstart_date_type%5D=start_current_month&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bnext_previous_button%5D=1&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Bcategory%5D%5Btype%5D=dropdown&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Btext_search%5D%5Btype%5D=text_input&atts%5Bsf_status%5D=1&atts%5Bhtml-class%5D=mec-widget+&atts%5Bstyle%5D=classic&atts%5Bwidget%5D=1&atts%5Bid%5D=974",
+                  style: "",
+                  ajax_url: "/wp-admin/admin-ajax.php",
+                  sed_method: "0",
+                  image_popup: "0",
+                  sf:
+                          {
+                              container: "#mec_search_form_974",
+                          },
+              });
+  });
+</script>

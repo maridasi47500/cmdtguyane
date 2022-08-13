@@ -1,0 +1,160 @@
+<%=content_for :myheader do%>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<%end%>
+<%=content_for :alittlecss do%>
+ .scheme_original button, .scheme_original button:focus, .scheme_original button:hover {
+ max-width:90px;
+ background-color:transparent;
+  }
+   .scheme_original button:focus {
+ max-width:90px;
+ background-color:transparent;
+  }
+
+<%end%>
+
+<section class="slider_wrap slider_fullwide slider_engine_revo slider_alias_slider_melody2-11">
+			
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/maquette-print-v2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/maquette-print-v3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+                </div>
+		</section>
+		
+			<div class="page_content_wrap page_paddings_no">
+                
+<div class="content_wrap">
+    
+<div class="content">
+<article class="itemscope post_item post_item_single post_featured_default post_format_standard post-1507 page type-page status-publish hentry" itemscope="" itemtype="//schema.org/Article">
+<section class="post_content" itemprop="articleBody">
+    
+    
+    <div class="vc_row wpb_row vc_row-fluid actualites-home"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="sc_section"><div class="sc_section_inner"><h1 class="sc_section_title sc_item_title">Actualité du Conservatoire</h1><div class="sc_section_content_wrap"></div></div></div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_custom_1588942300727  vc_custom_1588942300727"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#2aaae1;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#2aaae1;" class="vc_sep_line"></span></span>
+</div><div id="sc_blogger_756700686" class="sc_blogger layout_classic_3 template_masonry margin_top_large  sc_blogger_horizontal">
+    <div class="isotope_wrap inited" data-columns="3" style="position: relative; height: 762.102px;">		
+        
+        
+   <%=render partial: "posts/articlepageaccueil", collection: @news, as: :post%>					<!-- /.isotope_item -->
+										<!-- /.isotope_item -->
+									<!-- /.isotope_item -->
+		</div></div>
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html btn-padding-bottom">
+		<div class="wpb_wrapper">
+			<div class="sc_promo_button sc_item_button" style="text-align: center;"><a class="sc_button sc_button_square sc_button_style_filled sc_button_size_small" style="margin-top: 15px;" href="/category/actualites/">Voir toutes les actualités</a></div>
+		</div>
+	</div>
+</div></div></div></div>
+    
+    
+                                <%if Event.eventstocome?%>
+            <%=render "events/nextevent", event: @nextevent%>
+                <%=content_for :mycountdown do%>
+            <%=render "welcome/welcomemycountdownjs", event: @nextevent%>
+            <%end%>
+
+
+    <%else%>
+    <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid events-home vc_custom_1584569141475 vc_row-has-fill" style="position: relative; left: -12.2727px; box-sizing: border-box; width: 1400px; padding-left: 12.2727px; padding-right: 12.7273px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1462874272918"><div class="wpb_wrapper"><div class="sc_section"><div class="sc_section_inner"><h1 class="sc_section_title sc_item_title">Nos Évènements</h1><div class="sc_section_content_wrap"></div></div></div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_custom_1589635582469  vc_custom_1589635582469"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#2aaae1;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#2aaae1;" class="vc_sep_line"></span></span>
+</div><div class="mec-wrap mec-skin-carousel-container  mec-sm959" id="mec_skin_1433">
+    
+        <div class="mec-skin-carousel-events-container" id="mec_skin_events_1433">
+        Pas d'événement actuellement programmé.    </div>
+    </div>
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html button-events-home">
+		<div class="wpb_wrapper">
+			<div class="sc_promo_button sc_item_button" style="text-align: center;"><a class="sc_button sc_button_square sc_button_style_filled sc_button_size_small" style="margin-top: 15px;" href="/evenements/">Voir tous les évènements</a></div>
+		</div>
+	</div>
+</div></div></div></div>
+                <%end%>
+
+    
+    
+    
+    
+    <div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid block-enseignement"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1588938510730"><div class="wpb_wrapper"><div class="sc_section"><div class="sc_section_inner"><h1 class="sc_section_title sc_item_title">Un enseignement riche et diversifié</h1><div class="sc_section_content_wrap"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_custom_1588942300727  vc_custom_1588942300727"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#2aaae1;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#2aaae1;" class="vc_sep_line"></span></span>
+</div><div class="vc_row wpb_row vc_inner vc_row-fluid sc_services sc_services_style_services-1 sc_services_type_images margin_top_medium"><div class="column-1_4 column_padding_bottom wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html border-orange">
+		<div class="wpb_wrapper">
+			<div class="sc_services_item sc_services_item_1 odd first">
+<div class="sc_services_item_featured post_featured">
+<div class="post_thumb" data-image="/assets/accueil-musique1.jpg" data-title="Musique">
+<a class="hover_icon hover_icon_link" href="/musique/"><img class="wp-post-image" alt="Musique" src="/assets/accueil-musique1.jpg" width="370" height="254"></a></div>
+</div>
+<div class="sc_services_item_content">
+<h3 class="sc_services_item_title"><a href="/category/musique/">Musique</a></h3>
+</div>
+</div>
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html border-blue">
+		<div class="wpb_wrapper">
+			<div class="sc_services_item sc_services_item_1 odd first">
+<div class="sc_services_item_featured post_featured">
+<div class="post_thumb" data-image="/assets/accueil-danse.jpg" data-title="Danse">
+<a class="hover_icon hover_icon_link" href="/danse/"><img class="wp-post-image" alt="Danse" src="/assets/accueil-danse.jpg" width="370" height="254"></a>
+</div>
+</div>
+<div class="sc_services_item_content">
+<h3 class="sc_services_item_title"><a href="/category/danse/">Danse</a></h3>
+</div>
+</div>
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html border-red">
+		<div class="wpb_wrapper">
+			<div class="sc_services_item sc_services_item_1 odd first">
+<div class="sc_services_item_featured post_featured">
+<div class="post_thumb" data-image="/assets/accueil-theatre.jpg" data-title="Théâtre">
+<a class="hover_icon hover_icon_link" href="/theatre/"><img class="wp-post-image" alt="Théâtre" src="/assets/accueil-theatre.jpg" width="370" height="254"></a>
+</div>
+</div>
+<div class="sc_services_item_content">
+<h3 class="sc_services_item_title"><a href="/category/theatre/">Théâtre</a></h3>
+</div>
+</div>
+		</div>
+	</div>
+</div></div></div></div></div></div></div></div></div></div></div><div id="block-chiffres" data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid block-skills vc_row-no-padding" style="position: relative; left: -12.2727px; box-sizing: border-box; width: 1400px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="sc_parallax margin_bottom_null" data-parallax-speed="0.1" data-parallax-x-pos="50%" data-parallax-y-pos="50%"><div class="sc_parallax_content" style="background-image:url(/myfile/uploads/2020/03/chiffres-bg.jpg); background-position:50% 50%;"><div class="sc_content content_wrap"><h1 class="sc_title sc_title_regular sc_align_center margin_top_huge" style="margin-bottom: 1.55rem;text-align:center;color:#ffffff;">Le conservatoire en quelques chiffres</h1><div class="sc_section aligncenter" style="max-width: 590px;"><div class="sc_section_inner"><div class="sc_section_content_wrap"><span class="sc_highlight" style="color:#ffffff;font-size:1.3846em; line-height: 1.4em;">un enseignement pluridisciplinaire spécialisé, véritable vecteur local de la diffusion artistique.</span></div></div></div><div id="sc_skills_diagram_699786655" class="sc_skills sc_skills_counter margin_bottom_large" style="margin-top: 1.5rem;" data-type="counter" data-caption="Skills"><div class="columns_wrap sc_skills_columns sc_skills_columns_4"><div class="sc_skills_column column-1_4"><div class="sc_skills_item sc_skills_style_2 odd first"><div class="sc_skills_icon none"></div><div class="sc_skills_count"></div><div class="sc_skills_total" data-start="0" data-stop="1988" data-step="20" data-max="1988" data-speed="13" data-duration="1292" data-ed="">0</div><div class="sc_skills_info"><div class="sc_skills_label">Depuis</div></div></div></div><div class="sc_skills_column column-1_4"><div class="sc_skills_item sc_skills_style_2 even"><div class="sc_skills_icon none"></div><div class="sc_skills_count"></div><div class="sc_skills_total" data-start="0" data-stop="1200" data-step="20" data-max="1988" data-speed="23" data-duration="1380" data-ed="">0</div><div class="sc_skills_info"><div class="sc_skills_label">Élèves actifs</div></div></div></div><div class="sc_skills_column column-1_4"><div class="sc_skills_item sc_skills_style_2 odd"><div class="sc_skills_icon none"></div><div class="sc_skills_count"></div><div class="sc_skills_total" data-start="0" data-stop="4" data-step="20" data-max="1988" data-speed="19" data-duration="4" data-ed="">0</div><div class="sc_skills_info"><div class="sc_skills_label">Communes</div></div></div></div><div class="sc_skills_column column-1_4"><div class="sc_skills_item sc_skills_style_2 even"><div class="sc_skills_icon none"></div><div class="sc_skills_count"></div><div class="sc_skills_total" data-start="0" data-stop="3" data-step="20" data-max="1988" data-speed="12" data-duration="2" data-ed="">0</div><div class="sc_skills_info"><div class="sc_skills_label">Pôles Artistiques</div></div></div></div></div></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="sc_section"><div class="sc_section_inner"><h1 class="sc_section_title sc_item_title">Nos partenaires</h1><div class="sc_section_content_wrap"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_custom_1588942300727  vc_custom_1588942300727"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#2aaae1;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#2aaae1;" class="vc_sep_line"></span></span>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid block-partenaires vc_custom_1589644264877"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><figure class="sc_image  sc_image_shape_square"><a href="https://www.ctguyane.fr/"><img src="/myfile/ctg-logo.jpg" alt=""></a></figure></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><figure class="sc_image  sc_image_shape_square"><a href="https://www.culture.gouv.fr/Regions/Dac-Guyane"><img src="/myfile/Ministere-de-la-Culture.jpg" alt=""></a></figure></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><figure class="sc_image  sc_image_shape_square"><a href="https://www.troisfleuves.fr/"><img src="/myfile/logo-3-fleuves.jpg" alt=""></a></figure></div></div></div></div></div></div></div></div><div id="suivez-nous" data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid accent1_bg vc_custom_1588941801799 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex" style="position: relative; left: -12.2727px; box-sizing: border-box; width: 1400px; padding-left: 12.2727px; padding-right: 12.7273px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h1 class="sc_call_to_action_title sc_item_title">Suivez-nous :</h1>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_icon_element vc_icon_element-outer vc_icon_element-align-center"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-size-xl vc_icon_element-style- vc_icon_element-background-color-grey"><span class="vc_icon_element-icon fa fa-facebook-square"></span><a class="vc_icon_element-link" href="https://www.facebook.com/Conservatoire-de-Musique-Danse-et-Th%C3%A9%C3%A2tre-de-Guyane-1769220906641872/?ref=bookmarks" title="Facebook" target=" _blank"><img src="/assets/facebook-suivezmoi.png"/></a></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_icon_element vc_icon_element-outer vc_icon_element-align-center"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-size-xl vc_icon_element-style- vc_icon_element-background-color-grey"><span class="vc_icon_element-icon fa fa-youtube-square"></span>
+                        <a class="vc_icon_element-link" href="https://www.youtube.com/channel/UCTFZ9lIxbWkZdY6jmYoNv-A" title="YouTube" target=" _blank">
+                            <img src="/assets/youtube-suivezmoi.png"/>
+                            
+                    </a></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_icon_element vc_icon_element-outer vc_icon_element-align-center"><div class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-size-xl vc_icon_element-style- vc_icon_element-background-color-grey"><span class="vc_icon_element-icon fa fa-instagram"></span><a class="vc_icon_element-link" href="https://www.instagram.com/cmdt_guyane/?hl=fr" title="Instagram" target=" _blank"><img src="/assets/instagram-suivezmoi.png"/></a></div></div></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+
+				</section> <!-- </section> class="post_content" itemprop="articleBody"> -->
+			</article> <!-- </article> class="itemscope post_item post_item_single post_featured_default post_format_standard post-1507 page type-page status-publish hentry" itemscope itemtype="//schema.org/Article"> -->	<section class="related_wrap related_wrap_empty"></section>
+	
+		</div> <!-- </div> class="content"> -->
+		</div> <!-- </div> class="content_wrap"> -->			
+			</div>		<!-- </.page_content_wrap> -->

@@ -1,0 +1,45 @@
+	<script type="text/javascript">
+		document.body.className = document.body.className.replace('no-js','js');
+	</script>
+		<div id="login">
+		<h1><a href="/wp-login.php?redirect_to=https%3A%2F%2Fcmdt-guyane.fr%2Fmon-compte%2F#" style="height: 325.448px;">Propulsé par WordPress</a></h1>
+	
+		<form name="loginform" id="loginform" action="/wp-login.php" method="post">
+			<p>
+				<label for="user_login">Identifiant</label>
+				<input type="text" name="username" id="username" class="input" value="" size="20" autocapitalize="off">
+			</p>
+			<p>
+				<label for="user_login">Identifiant ou adresse e-mail</label>
+				<input type="text" name="email" id="user_email" class="input" value="" size="20" autocapitalize="off">
+			</p>
+
+			<div class="user-pass-wrap">
+				<label for="user_pass">Mot de passe</label>
+				<div class="wp-pwd">
+					<input type="password" name="pwd" id="user_pass" class="input password-input" value="" size="20">
+					<button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Afficher le mot de passe">
+						<span class="dashicons dashicons-visibility" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+                        			<div class="user-pass-wrap">
+				<label for="user_pass">Confirmer le mot de passe</label>
+				<div class="wp-pwd">
+					<input type="password" name="pwd2" id="user_pass2" class="input password-input" value="" size="20">
+					<button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Afficher le mot de passe">
+						<span class="dashicons dashicons-visibility" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+
+			<p class="submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="S'inscrire">
+									<input type="hidden" name="redirect_to" value="/mon-compte/">
+									<input type="hidden" name="testcookie" value="1">
+			</p>
+		</form>
+
+					<p id="nav">
+									<a href="/wp-login.php">Se connecter</a>
+								</p>

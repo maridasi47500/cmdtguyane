@@ -1,0 +1,4 @@
+<p>Bienvenue ! <%=@email%> vient de déposer son annonce de troc - vente - achat !</p>
+<p><%=link_to "voir l'annonce", voir_ad_mail_url(title: @title, host: "http://localhost:3000")%></p>
+
+<p><%=link_to "débloquer l'annonce", debloc_ad_mail_url(title: @title, host: "http://localhost:3000")%></p>

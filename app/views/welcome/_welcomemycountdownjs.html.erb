@@ -1,0 +1,13 @@
+<script type="text/javascript">
+jQuery(document).ready(function()
+{
+    jQuery("#mec_skin_countdown<%=event.id%>").mecCountDown(
+    {
+        date: "<%=event.dateforcountdown%>",
+        format: "off"
+    },
+    function()
+    {
+    });
+});
+</script>

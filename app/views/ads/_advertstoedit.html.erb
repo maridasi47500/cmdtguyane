@@ -1,0 +1,114 @@
+<style>
+  .animatemyspin {
+  width: 100px;
+  height: 100px;
+  background-color: #0CB1C4;
+  animation-name: animatespin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes animatespin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+</style>
+
+<script>
+  jQuery(function(){
+  jQuery('.adverts-manage-action-delete').click(function(){
+    jQuery(this).toggle();
+    jQuery(jQuery(this)[0].nextSibling.nextSibling).toggle();
+    return false;
+  })
+  jQuery('.adverts-manage-action-delete-no').click(function(){
+    var par=jQuery(this).parent();
+    par.toggle();
+    jQuery(par[0].previousSibling.previousSibling).toggle();
+    return false;
+  })
+  jQuery('.adverts-manage-action-delete-yes').click(function(event){
+    var par=jQuery(this).parent().parent().children('[data-id]');
+    var par2=par.parent().parent().parent();
+    var par3=par2.parent();
+    console.log(par.parent().parent().parent());
+    var spin=jQuery(this).parent().children('.animatemyspin');
+    console.log(spin);
+    jQuery.ajax({
+        type: "POST",
+        url: '/wp-admin/admin-ajax.php',
+        data:{actions: 'adverts_delete',
+ajax: 1,
+_ajax_nonce: '8a02ccbd7f',
+id: par.attr('data-id')
+        },
+        beforeSend: function() {
+            spin.show();
+        },
+        error:function(){
+          return false;
+        },
+        success: function(data) {
+          spin.hide();
+          if (data.result === 1) {
+            par2[0].outerHTML = ("<div class=\"advert-manage-item advert-item advert-item-col-1 advert-manage-deleted adverts-icon-trash\" style=\"display: block;\">"+data.message+"<a href=\"#\">OK</a></div>");
+          }
+          par3.children('.advert-manage-item').click(function(){jQuery(this).remove();})
+                    return false;
+
+    }
+    });
+    event.preventDefault();
+    event.stopPropagation();
+
+    return false;
+  })
+
+  })
+  </script>
+
+<div class="top_panel_title top_panel_style_6  title_present breadcrumbs_present scheme_original">
+					<div class="top_panel_title_inner top_panel_inner_style_6  title_present_inner breadcrumbs_present_inner">
+						<div class="content_wrap">
+							<h1 class="page_title">Mon Compte</h1><div class="breadcrumbs"><a class="breadcrumbs_item home" href="/">Accueil</a><span class="breadcrumbs_delimiter"></span><a class="breadcrumbs_item cat_post" href="/category/espace-brocante/">Espace Brocante</a><span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Mon Compte</span></div>						</div>
+					</div>
+				</div>
+				
+			<div class="page_content_wrap page_paddings_yes">
+                
+<div class="content_wrap">
+<div class="content">
+<article class="itemscope post_item post_item_single post_featured_default post_format_standard post-1573 post type-post status-publish format-standard hentry category-espace-brocante" itemscope itemtype="//schema.org/Article"><div class="post_info">
+			<span class="post_info_item post_info_posted"> <a href="/mon-compte/" class="post_info_date date updated" itemprop="datePublished" content="2019-03-20 16:43:51">20 Mars 2019</a></span>
+				<span class="post_info_item post_info_posted_by icon-user-light vcard" itemprop="author">par <a href="/author/admin-cmdt-guyane/" class="post_info_author">VQJAYyth</a></span>
+			<span class="post_info_item post_info_counters">	<span class="post_counters_item post_counters_views icon-eye" title="Vues - 6158" href="/mon-compte/"><span class="post_counters_number">6158</span></span>
+	</span>
+		</div>
+<section class="post_content" itemprop="articleBody"><div class="adverts-grid">
+                <%if ads.length > 0%>
+        <%=render partial: "ads/myadverttoedit", collection: ads, as: :ad%>
+    <%else%>
+        <div class="adverts-grid-row adverts-grid-compact">
+        <div class="adverts-grid-col adverts-col">
+            <em>Vous n'avez aucune annonce publiée actuellement.</em>
+        </div>
+    </div>
+        <%end%>
+            </div>
+
+<div class="adverts-pagination">
+    </div>
+
+				</section> <!-- </section> class="post_content" itemprop="articleBody"> -->	<section class="related_wrap related_wrap_empty"></section>
+	
+			</article> <!-- </article> class="itemscope post_item post_item_single post_featured_default post_format_standard post-1573 post type-post status-publish format-standard hentry category-espace-brocante" itemscope itemtype="//schema.org/Article"> -->
+		</div> <!-- </div> class="content"> -->

@@ -1,0 +1,23 @@
+<div class="isotope_item isotope_item_classic isotope_item_classic_2 isotope_column_2					">
+			<article class="post_item post_item_classic post_item_classic_2				  post_format_standard odd">
+				
+								<div class="post_content isotope_item_content">
+                                                                    
+                   
+					<div class="post_info">
+			<span class="post_info_item post_info_posted"> <a href="<%=post.url%>" class="post_info_date"><%=post.date ? l(post.date, format: :long) : nil%></a></span>
+		</div>							<h3 class="post_title"><a href="<%=post.url%>"><%=post.title%></a></h3>
+							
+					<div class="post_descr">
+  
+						<p><%=strip_tags(post.content).truncate(146)%>
+                                                
+                                             
+                                                
+                                                
+                                                
+                                                </p>					</div>
+
+				</div>				<!-- /.post_content -->
+			</article>	<!-- /.post_item -->
+		</div>	

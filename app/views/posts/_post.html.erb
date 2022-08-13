@@ -1,0 +1,76 @@
+<%=content_for :alittlecss do%>
+
+.content {
+    float:right;
+    text-align:center;
+    width:70%;
+    padding-left:30px;
+}
+<%end%>
+
+				<div class="top_panel_title top_panel_style_6  title_present breadcrumbs_present scheme_original">
+					<div class="top_panel_title_inner top_panel_inner_style_6  title_present_inner breadcrumbs_present_inner">
+						<div class="content_wrap">
+							<h1 class="page_title"><%=post.title%></h1><div class="breadcrumbs">
+<a class="breadcrumbs_item home" href="/">Accueil</a>
+
+                    <%=render 'artcats/artcat',artcat: post.artcat, first: 'cat_post' %>
+                                                          <%=render 'artcats/artcat',artcat: post.currentcat, first: 'current' %>
+                  
+                                                        
+                                                        </div>						
+                                                
+                                                </div>
+					</div>
+				</div>
+				
+			<div class="page_content_wrap page_paddings_yes">
+                
+<div class="content_wrap">
+<div class="content">
+<article class="itemscope post_item post_item_single post_featured_default post_format_standard post-1389 post type-post status-publish format-standard hentry category-vie-scolaire" itemscope="" itemtype="//schema.org/Article"><div class="post_info">
+			<span class="post_info_item post_info_posted"> <a href="/vie-scolaire/" class="post_info_date date updated" itemprop="datePublished" content="<%=post.date%>"><%=post.date ? l(post.date, format: :long) : nil%></a></span>
+				<span class="post_info_item post_info_posted_by icon-user-light vcard" itemprop="author">par <a href="/author/admin-cmdt-guyane/" class="post_info_author"><%=post.auteur%></a></span>
+			<span class="post_info_item post_info_counters">	<span class="post_counters_item post_counters_views icon-eye" title="Vues - <%=post.vues%>" href="/vie-scolaire/"><span class="post_counters_number"><%=post.vues%></span></span>
+	</span>
+		</div>
+<section class="post_content" itemprop="articleBody">
+    <%=post.content.html_safe%>
+    <%if post.modals%>
+ <div class="container">
+  <!-- Trigger the modal with a button -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content bg-black mymodalcontent">
+        <div class="modal-header">
+          <button type="button" class="close " onclick="closemodal();return false;" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+ <iframe id="masupervideo" width="900px" max-width="900px" height="515px" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+    <%end%>
+				</section> <!-- </section> class="post_content" itemprop="articleBody"> -->	
+                                
+                                
+                                
+                                
+                                <section class="related_wrap related_wrap_empty"></section>
+	
+			</article> 
+    
+    
+    <!-- </article> class="itemscope post_item post_item_single post_featured_default post_format_standard post-1389 post type-post status-publish format-standard hentry category-vie-scolaire" itemscope itemtype="//schema.org/Article"> -->
+		</div> <!-- </div> class="content"> -->	

@@ -1,0 +1,55 @@
+<div id="wpadminbar" class="nojq">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Aller à la barre d’outils</a>
+						<div class="quicklinks menu_button" id="wp-toolbar" role="navigation" aria-label="Barre d’outils">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+                                    <li id="wp-admin-bar-wp-logo" class="menupop">
+                                        <a class="ab-item" aria-haspopup="true" href="/wp-admin/about.php">
+                                            <span class="ab-icon"></span><span class="screen-reader-text">À propos de WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu"><li id="wp-admin-bar-about"><a class="ab-item" href="/wp-admin/about.php">À propos de WordPress</a></li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://fr.wordpress.org/">Site de WordPress-FR</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wpfr.net/support/">Forums de support</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Remarque</a></li></ul></div></li><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="/wp-admin/">Conservatoire de Musique, Danse et Théât…</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu"><li id="wp-admin-bar-dashboard"><a class="ab-item" href="/wp-admin/">Tableau de bord</a></li></ul></div></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Rechercher</label><input type="submit" class="adminbar-button" value="Rechercher"></form></div></li><li id="wp-admin-bar-my-account" class="menupop with-avatar">
+                                        
+                                        
+                                        
+                                        <a role="button" aria-expanded="false"
+     aria-controls="wp-admin-bar-user-actions" class="ab-item" 
+     aria-haspopup="true" href="/wp-admin/profile.php">
+                                            
+                                            Bonjour, <span class="display-name"><%=current_user.username%></span>
+                                            <img alt="" src="https://secure.gravatar.com/avatar/7daf525dce4a4c44a4d07cdc29c6a4b2?s=26&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/7daf525dce4a4c44a4d07cdc29c6a4b2?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26">
+                                        </a>
+                                            
+                                            <div class="ab-sub-wrapper"><ul 
+      role="menu"
+      aria-labelledby="menubutton" id="wp-admin-bar-user-actions" class="ab-submenu">
+                                                    <li  role="none" id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="/wp-admin/profile.php">
+                                                            <img alt="" src="https://secure.gravatar.com/avatar/7daf525dce4a4c44a4d07cdc29c6a4b2?s=64&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/7daf525dce4a4c44a4d07cdc29c6a4b2?s=128&amp;d=mm&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64">
+                                                            
+                                                            <span class="display-name"><%=current_user.username%></span>
+                                                            <span class="username"><%=current_user.email%></span></a></li>
+                                                            <li  role="none" id="wp-admin-bar-edit-profile">
+                                                                <a  role="menuitem"  class="ab-item" href="/wp-admin/profile.php">Modifier mon profil</a>
+                                                            </li>
+                                                            <li  role="none" id="wp-admin-bar-logout">
+                                                                <a  role="menuitem"  class="ab-item" href="/wp-login.php?actions=logout&amp;_wpnonce=470b52de43">Se déconnecter
+                                                                </a></li>
+                                                </ul>
+                                            </div>
+                                    </li>
+                                </ul>			
+                                                </div>
+						<a  role="menuitem"  class="screen-reader-shortcut" href="/wp-login.php?actions=logout&amp;_wpnonce=470b52de43">Se déconnecter</a>
+					</div>
+<script>
+  jQuery(function(){
+    jQuery('#wp-admin-bar-my-account').click(function(){window.location = "<%=moncompte_path%>"; return false; });
+    jQuery('#wp-admin-bar-my-account').hover(function(){
+      jQuery(this).toggleClass('hover');
+    })
+        jQuery('#wp-admin-bar-my-account').children().mouseout(function(){
+      jQuery(this).toggleClass('hover');
+    })
+    jQuery('#wp-admin-bar-logout').click(function(){
+     window.location = jQuery(this).children()[0].href; 
+    })
+
+    })
+  
+  </script>

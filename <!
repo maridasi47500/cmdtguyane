@@ -1,0 +1,10 @@
+class CreateCities < ActiveRecord::Migration[6.0]
+  def change
+    create_table :cities do |y|
+      y.string :name
+      y.string :integer
+      y.timestamps
+    end
+    add_column :places, :city_id, :integer
+  end
+end
